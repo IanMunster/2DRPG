@@ -3,44 +3,33 @@ using System.Collections.Generic;
 using UnityEngine;
 
 /// <summary>
-/// Player.
-/// Moves Player
+/// Player. Inherits behaviour from Character Class
+/// Get Movement Input from User
 /// </summary>
 
-public class Player : MonoBehaviour {
+// Inherits from Character Class
+public class Player : Character {
 
-	// Private Move Speed of Player (Test Default: 1.5f)
-	[SerializeField]
-	private float speed;
 
-	// Private Move Direction of Player
-	private Vector2 direction;
 
 	// Use this for initialization
 	void Start () {
 		
 	}
-	
-	// Update is called once per frame
-	void Update () {
+
+
+	/// <summary> Overrides Update behaviour of Inherited class (Update is called once per frame) </summary>
+	protected override void Update () {
 		// Update the GetInput Function
 		GetInput ();
-		// Update the Move Function
-		Move ();
-
+		// Call the Inherited overridden Update Function
+		base.Update ();
 	}
 
 
-	// Function to Move the Player
-	public void Move () {
-		// Move (translate) the Transform position, in given Direction times PlayerSpeed times FrameUpdate
-		transform.Translate (direction * speed * Time.deltaTime);
-	}
-
-
-	// Function to GetInput of User
+	/// <summary> Function to GetInput from User (WASD)</summary>
 	private void GetInput () {
-		// No Input; No Movement, sets Direction to Ze	ro
+		// No Input; No Movement, sets Direction to Zero
 		direction = Vector2.zero;
 
 		// Get Input When "W" is hold.
