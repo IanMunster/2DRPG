@@ -10,10 +10,29 @@ using UnityEngine;
 // Inherits from Character Class
 public class Player : Character {
 
+	//Health Stat of player
+	[SerializeField]
+	private Stat health;
+	// Initial max ammount of Health
+	private float initHealth = 100f;
+	// Current ammount of Health
+	[SerializeField]
+	private float healthValue;
+
+	// Mana Stat of player
+	[SerializeField]
+	private Stat mana;
+	// Initial ammount of Mana (Max&Current)
+	private float initMana = 50f;
 
 
 	/// <summary> Overrides Update behaviour of Inherited class (Use this for initialization) </summary>
 	protected override void Start () {
+		// Initialize Players Health Stat 
+		health.Initialize (healthValue, initHealth);
+		// Initialize Players Mana Stat
+		mana.Initialize (initMana, initMana);
+
 		// Call the Inherited overriden StartFunction
 		base.Start ();
 	}
@@ -32,6 +51,22 @@ public class Player : Character {
 	private void GetInput () {
 		// No Input; No Movement, sets Direction to Zero
 		direction = Vector2.zero;
+
+		//DEBUG
+		// Get Input When "I" is hold.
+		if (Input.GetKeyDown (KeyCode.I)) {
+			// Decrease Health
+			health.MyCurrentValue -= 10f;
+			mana.MyCurrentValue -= 10f;
+		}
+		// Get Input When "O" is hold.
+		if (Input.GetKeyDown (KeyCode.O)) {
+			// Increase Health
+			health.MyCurrentValue += 10f;
+			mana.MyCurrentValue += 10f;
+		}
+		//END DEBUG
+
 
 		// Get Input When "W" is hold.
 		if (Input.GetKey (KeyCode.W)) {
