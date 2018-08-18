@@ -40,13 +40,21 @@ public abstract class Character : MonoBehaviour {
 	public void Move () {
 		// Move (translate) the Transform position, in given Direction times PlayerSpeed times FrameUpdate
 		transform.Translate (direction * speed * Time.deltaTime);
-		// Call Animate Function to Animate Movement
-		Animate (direction);
+		// Check if the player is moving in any Direction
+		if (direction.x != 0 || direction.y != 0) {
+			// Call Animate Function to Animate Movement
+			Animate (direction);
+		} else {
+			//Set Idle-AnimationLayer to front
+			animator.SetLayerWeight (1, 0);
+		}
 	}
 
 
-	/// <summary> Function to Animate Character Movement & Idle (in Vector2 Direction) </summary>
+	/// <summary> Function to Animate Character Movement & Idle (in Vector2 Direction) And set the Animation Layer </summary>
 	public void Animate (Vector2 direction) {
+		//Set Walk-AnimationLayer to front
+		animator.SetLayerWeight (1, 1);
 		// Give Animators X & Y values for Movement & Idle Animations
 		animator.SetFloat ("X", direction.x);
 		animator.SetFloat ("Y", direction.y);
