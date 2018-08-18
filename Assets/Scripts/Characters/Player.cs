@@ -12,9 +12,10 @@ public class Player : Character {
 
 
 
-	// Use this for initialization
-	void Start () {
-		
+	/// <summary> Overrides Update behaviour of Inherited class (Use this for initialization) </summary>
+	protected override void Start () {
+		// Call the Inherited overriden StartFunction
+		base.Start ();
 	}
 
 
