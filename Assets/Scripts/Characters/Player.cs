@@ -32,7 +32,6 @@ public class Player : Character {
 		health.Initialize (healthValue, initHealth);
 		// Initialize Players Mana Stat
 		mana.Initialize (initMana, initMana);
-
 		// Call the Inherited overriden StartFunction
 		base.Start ();
 	}

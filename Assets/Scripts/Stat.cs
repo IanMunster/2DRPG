@@ -11,8 +11,10 @@ using UnityEngine.UI; // needed for UI Components
 
 public class Stat : MonoBehaviour {
 
-	// Content of the Stat UI
+	// Content of the Stat UI to display Amount in Fill Amount
 	private Image content;
+	// UI Stat Text Component to display current Amount in Text
+	[SerializeField] private Text textValue;
 	// The current amount of StatFill 
 	private float currentFill;
 	// The current value of the Stat
@@ -42,6 +44,9 @@ public class Stat : MonoBehaviour {
 			}
 			// Set the Fill of UI; Current Fill / Max Value (between 0&1)
 			currentFill = currentValue / MyMaxValue;
+
+			// Set the Text UI to Current Amount
+			textValue.text = name + " :  " + currentValue + " / " + MyMaxValue;
 		}
 	}
 
