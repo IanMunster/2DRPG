@@ -97,39 +97,33 @@ public class Player : Character {
 			// Gem Index to Right
 			gemIndex = 3;
 		}
-
-		// Get Input when Space is Pressed
-		if (Input.GetKeyDown (KeyCode.Space)) {
-			// When Attacking Block the View Behind Player
-			BlockView ();
-			// Check if the Player has a target, is Not Attacking or Moving & In Line of Sight
-			if (MyTarget != null && !isAttacking && !IsMoving && InLineOfSight() ) {
-				// Call the Attack IEnumerator
-				attackRoutine = StartCoroutine ( Attack() );
-			}
-		}
 	}
 
 
 	/// <summary> Function to Attack (IEnumerator to WaitForSecond Cast Time) </summary>
-	private IEnumerator Attack () {
+	private IEnumerator Attack (int spellIndex) {
 		// Set Character Is Attacking to True to Activate the Attack Layer
 		isAttacking = true;
 		// Set the Animator to Attack Animation
 		myAnimator.SetBool ("isAttacking", isAttacking);
 		// Cast Time; Wait for Amount of Seconds
-		yield return new WaitForSeconds (1f); // Debugging Purpose
-		// Cast the Spell
-		CastSpell ();
+		yield return new WaitForSeconds (1f);
+		// Instantiate a Spell (Get the First Spell, from possible Spell Prefabs, on the Player Pos, with Own Rot)
+		Instantiate(spellPrefabs[spellIndex], gemPoints[gemIndex].position, Quaternion.identity);
 		// After cast, Stop Attacking
 		StopAttack ();
 	}
 
 
 	/// <summary> Function to Cast a Spell (From SpellLibrary) </summary>
-	public void CastSpell () {
-		// Instantiate a Spell (Get the First Spell, from possible Spell Prefabs, on the Player Pos, with Own Rot)
-		Instantiate(spellPrefabs[0], gemPoints[gemIndex].position, Quaternion.identity);
+	public void CastSpell (int spellIndex) {
+		// When Attacking Block the View Behind Player
+		BlockView ();
+		// Check if the Player has a target, is Not Attacking or Moving & In Line of Sight
+		if (MyTarget != null && !isAttacking && !IsMoving && InLineOfSight() ) {
+			// Call the Attack IEnumerator
+			attackRoutine = StartCoroutine ( Attack(spellIndex) );
+		}
 	}
 
 

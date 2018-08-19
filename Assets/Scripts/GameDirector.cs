@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 /// <summary>
 /// Game director.
@@ -26,8 +27,8 @@ public class GameDirector : MonoBehaviour {
 
 	// Function to Click on a Target with Mouse
 	private void ClickTarget () {
-		// If Left-Mouse Clicked
-		if (Input.GetMouseButtonDown(0)) {
+		// If Left-Mouse Clicked and the Mouse is hovering over UI buttons
+		if (Input.GetMouseButtonDown(0) && !EventSystem.current.IsPointerOverGameObject() ) {
 			// Raycast from MousePosition into GameWorld on Clickable LayerMask
 			RaycastHit2D hit = Physics2D.Raycast (Camera.main.ScreenToWorldPoint(Input.mousePosition), Vector2.zero, Mathf.Infinity, LayerMask.GetMask ("Clickable") );
 			// If raycast Hit something

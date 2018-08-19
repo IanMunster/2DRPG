@@ -23,7 +23,7 @@ GameObject:
   - component: {fileID: 50245135740981216}
   - component: {fileID: 114980038207917110}
   m_Layer: 0
-  m_Name: Fire_SpellEffect
+  m_Name: FrostPrefab
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -108,7 +108,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300038, guid: 76a8f3bcdd2d088408d1c795893f8e9b, type: 3}
+  m_Sprite: {fileID: 21300060, guid: 76a8f3bcdd2d088408d1c795893f8e9b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
