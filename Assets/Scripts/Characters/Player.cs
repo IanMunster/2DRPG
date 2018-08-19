@@ -24,6 +24,10 @@ public class Player : Character {
 
 	// Array of All Spell prefabs
 	[SerializeField] private GameObject[] spellPrefabs;
+	// Array of All the GemPoints (Exit points of spell)
+	[SerializeField] private Transform[] gemPoints;
+	// Index of the current Gem ExitPoint (2 as Default downwards)
+	private int gemIndex = 2;
 
 
 	/// <summary> Overrides Update behaviour of Inherited class (Use this for initialization) </summary>
@@ -60,21 +64,29 @@ public class Player : Character {
 		if (Input.GetKey (KeyCode.W)) {
 			// Change Direction to Upwards Direction 
 			direction += Vector2.up;
+			// Gem Index to Upwards
+			gemIndex = 0;
 		}
 		// Get Input When "A" is hold.
 		if (Input.GetKey (KeyCode.A)) {
 			// Change Direction to Left Direction 
 			direction += Vector2.left;
+			// Gem Index to Left
+			gemIndex = 1;
 		}
 		// Get Input When "S" is hold.
 		if (Input.GetKey (KeyCode.S)) {
 			// Change Direction to Downwards Direction 
 			direction += Vector2.down;
+			// Gem Index to Downwards
+			gemIndex = 2;
 		}
 		// Get Input When "D" is hold.
 		if (Input.GetKey (KeyCode.D)) {
 			// Change Direction to Right Direction 
 			direction += Vector2.right;
+			// Gem Index to Right
+			gemIndex = 3;
 		}
 
 		// Get Input when Space is Pressed
@@ -106,6 +118,6 @@ public class Player : Character {
 	/// <summary> Function to Cast a Spell (From SpellLibrary) </summary>
 	public void CastSpell () {
 		// Instantiate a Spell (Get the First Spell, from possible Spell Prefabs, on the Player Pos, with Own Rot)
-		Instantiate(spellPrefabs[0], transform.position, Quaternion.identity);
+		Instantiate(spellPrefabs[0], gemPoints[gemIndex].position, Quaternion.identity);
 	}
 }
