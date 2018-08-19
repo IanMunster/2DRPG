@@ -4,7 +4,10 @@ using UnityEngine;
 
 /// <summary>
 /// Player. Inherits behaviour from Character Class
-/// Get Movement Input from User
+/// Get Input from User for Movement & Attack
+/// Initializes players Health & Mana
+/// Cast Spells & Position to cast
+/// Check's for Line of Sight (Sight-Block)
 /// </summary>
 
 // Inherits from Character Class
@@ -29,6 +32,12 @@ public class Player : Character {
 	// Index of the current Gem ExitPoint (2 as Default downwards)
 	private int gemIndex = 2;
 
+	// All Sightblock of Player to Check Line Of Sight
+	[SerializeField] private SightBlock[] sightBlocks;
+
+// DEBUG & TESTING PURPOSE ONLY
+	private Transform target;
+
 
 	/// <summary> Overrides Update behaviour of Inherited class (Use this for initialization) </summary>
 	protected override void Start () {
@@ -36,6 +45,10 @@ public class Player : Character {
 		health.Initialize (healthValue, initHealth);
 		// Initialize Players Mana Stat
 		mana.Initialize (initMana, initMana);
+
+// DEBUG & TESTING PURPOSE ONLY
+		target = GameObject.Find ("NPC_Target").transform;
+
 		// Call the Inherited overriden StartFunction
 		base.Start ();
 	}
@@ -52,6 +65,7 @@ public class Player : Character {
 
 	/// <summary> Function to GetInput from User (WASD)</summary>
 	private void GetInput () {
+
 //DEBUG
 		// Get Input When "I" is pressed Decrease Health & When "O" is pressed Increase Health
 		if (Input.GetKeyDown (KeyCode.I)) { health.MyCurrentValue -= 10f; mana.MyCurrentValue -= 10f; }
@@ -91,8 +105,10 @@ public class Player : Character {
 
 		// Get Input when Space is Pressed
 		if (Input.GetKeyDown (KeyCode.Space)) {
-			// Check if the Player is Not Attacking or Moving
-			if (!isAttacking && !IsMoving) {
+			// When Attacking Block the View Behind Player
+			BlockView ();
+			// Check if the Player is Not Attacking or Moving & In Line of Sight
+			if (!isAttacking && !IsMoving && InLineOfSight() ) {
 				// Call the Attack IEnumerator
 				attackRoutine = StartCoroutine ( Attack() );
 			}
@@ -107,7 +123,7 @@ public class Player : Character {
 		// Set the Animator to Attack Animation
 		myAnimator.SetBool ("isAttacking", isAttacking);
 		// Cast Time; Wait for Amount of Seconds
-		yield return new WaitForSeconds (3f); // Debugging Purpose
+		yield return new WaitForSeconds (1f); // Debugging Purpose
 		// Cast the Spell
 		CastSpell ();
 		// After cast, Stop Attacking
@@ -119,5 +135,33 @@ public class Player : Character {
 	public void CastSpell () {
 		// Instantiate a Spell (Get the First Spell, from possible Spell Prefabs, on the Player Pos, with Own Rot)
 		Instantiate(spellPrefabs[0], gemPoints[gemIndex].position, Quaternion.identity);
+	}
+
+
+	/// <summary> Checks with Raycast if InLineOfSight or Blocked</summary>
+	private bool InLineOfSight () {
+		// Calculate the Direction of Target
+		Vector3 targetDirection = (target.position - transform.position).normalized;
+		// Cast a Ray (from player towards enemy, with distance of same range), on LayerMask 8 (viewBlock Layer)
+		RaycastHit2D hit = Physics2D.Raycast (transform.position, target.position, Vector2.Distance( transform.position, target.position ), LayerMask.GetMask("ViewBlock"));
+		// If Raycast doesnt Hit anything (no block of view)
+		if (hit.collider == null) {
+			// In Line of Sight
+			return true;
+		}
+		// Default return false (view Blocked)
+		return false;
+	}
+
+
+	/// <summary> Function to Block the View behind player </summary>
+	private void BlockView () {
+		// Go through each SightBlock
+		foreach (SightBlock b in sightBlocks) {
+			// Deactivate all SightBlocks
+			b.Deactivate ();
+		}
+		// Activate correct block behind player, based on Gem ExitPoint Position aka Attack Direction
+		sightBlocks [gemIndex].Activate ();
 	}
 }
