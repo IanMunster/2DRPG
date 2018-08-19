@@ -12,8 +12,7 @@ using UnityEngine;
 public abstract class Character : MonoBehaviour {
 
 	// Private Move Speed of Character (Test Default: 1.5f)
-	[SerializeField]
-	private float speed;
+	[SerializeField] private float speed;
 	// Rigidbody Component for Movement
 	private Rigidbody2D rigidBody;
 	// Protected Move Direction of Character (still accessable to Player e.d)
@@ -94,14 +93,14 @@ public abstract class Character : MonoBehaviour {
 
 	/// <summary> Function to Stop Attacking </summary>
 	public void StopAttack () {
+		// Set character to not Attacking
+		isAttacking = false;
+		// Set the Animators Paramaters of Attack to false
+		myAnimator.SetBool ("isAttacking", isAttacking);
 		// Check if the player should be interupted / is Casting
 		if (attackRoutine != null) {
 			// Stop the Attack Coroutine for Casting
 			StopCoroutine (attackRoutine);
-			// Set character to not Attacking
-			isAttacking = false;
-			// Set the Animators Paramaters of Attack to false
-			myAnimator.SetBool ("isAttacking", isAttacking);
 		}
 	}
 }

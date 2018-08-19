@@ -11,19 +11,19 @@ using UnityEngine;
 public class Player : Character {
 
 	//Health Stat of player
-	[SerializeField]
-	private Stat health;
+	[SerializeField] private Stat health;
 	// Initial max ammount of Health
 	private float initHealth = 100f;
 	// Current ammount of Health
-	[SerializeField]
-	private float healthValue;
+	[SerializeField] private float healthValue;
 
 	// Mana Stat of player
-	[SerializeField]
-	private Stat mana;
+	[SerializeField] private Stat mana;
 	// Initial ammount of Mana (Max&Current)
 	private float initMana = 50f;
+
+	// Array of All Spell prefabs
+	[SerializeField] private GameObject[] spellPrefabs;
 
 
 	/// <summary> Overrides Update behaviour of Inherited class (Use this for initialization) </summary>
@@ -79,23 +79,33 @@ public class Player : Character {
 
 		// Get Input when Space is Pressed
 		if (Input.GetKeyDown (KeyCode.Space)) {
-			// Call the Attack IEnumerator
-			attackRoutine = StartCoroutine ( Attack() );
+			// Check if the Player is Not Attacking or Moving
+			if (!isAttacking && !IsMoving) {
+				// Call the Attack IEnumerator
+				attackRoutine = StartCoroutine ( Attack() );
+			}
 		}
 	}
 
 
 	/// <summary> Function to Attack (IEnumerator to WaitForSecond Cast Time) </summary>
 	private IEnumerator Attack () {
-		if (!isAttacking && !IsMoving) {
-			// Set Character Is Attacking Bool to True to Activate the Correct Layer
-			isAttacking = true;
-			// Set the Animator to Attack Animation
-			myAnimator.SetBool ("isAttacking", isAttacking);
-			// Cast Time; Wait for Amount of Seconds
-			yield return new WaitForSeconds (5f); // Debugging Purpose
-			// After cast, Stop Attacking
-			StopAttack ();
-		}
+		// Set Character Is Attacking to True to Activate the Attack Layer
+		isAttacking = true;
+		// Set the Animator to Attack Animation
+		myAnimator.SetBool ("isAttacking", isAttacking);
+		// Cast Time; Wait for Amount of Seconds
+		yield return new WaitForSeconds (3f); // Debugging Purpose
+		// Cast the Spell
+		CastSpell ();
+		// After cast, Stop Attacking
+		StopAttack ();
+	}
+
+
+	/// <summary> Function to Cast a Spell (From SpellLibrary) </summary>
+	public void CastSpell () {
+		// Instantiate a Spell (Get the First Spell, from possible Spell Prefabs, on the Player Pos, with Own Rot)
+		Instantiate(spellPrefabs[0], transform.position, Quaternion.identity);
 	}
 }
