@@ -25,8 +25,9 @@ public class Player : Character {
 	// Initial ammount of Mana (Max&Current)
 	private float initMana = 50f;
 
-	// Array of All Spell prefabs
-	[SerializeField] private GameObject[] spellPrefabs;
+	// Players SpellBook
+	private SpellBook spellBook;
+
 	// Array of All the GemPoints (Exit points of spell)
 	[SerializeField] private Transform[] gemPoints;
 	// Index of the current Gem ExitPoint (2 as Default downwards)
@@ -40,6 +41,8 @@ public class Player : Character {
 
 	/// <summary> Overrides Update behaviour of Inherited class (Use this for initialization) </summary>
 	protected override void Start () {
+		// Find the Players SpellBook
+		spellBook = GetComponent <SpellBook> ();
 		// Initialize Players Health Stat 
 		health.Initialize (healthValue, initHealth);
 		// Initialize Players Mana Stat
@@ -102,14 +105,16 @@ public class Player : Character {
 
 	/// <summary> Function to Attack (IEnumerator to WaitForSecond Cast Time) </summary>
 	private IEnumerator Attack (int spellIndex) {
+		// Get a new Spell from Spellbook (on Index of Array)
+		Spell newSpell = spellBook.CastSpell(spellIndex);
 		// Set Character Is Attacking to True to Activate the Attack Layer
 		isAttacking = true;
 		// Set the Animator to Attack Animation
 		myAnimator.SetBool ("isAttacking", isAttacking);
 		// Cast Time; Wait for Amount of Seconds
-		yield return new WaitForSeconds (1f);
+		yield return new WaitForSeconds (newSpell.MyCastTime);
 		// Instantiate a Spell (Get the First Spell, from possible Spell Prefabs, on the Player Pos, with Own Rot)
-		Spell s = Instantiate(spellPrefabs[spellIndex], gemPoints[gemIndex].position, Quaternion.identity).GetComponent<Spell>();
+		SpellScript s = Instantiate(newSpell.MySpellPrefab, gemPoints[gemIndex].position, Quaternion.identity).GetComponent<SpellScript>();
 		// Set the new Spells Target
 		s.MyTarget = MyTarget;
 		// After cast, Stop Attacking

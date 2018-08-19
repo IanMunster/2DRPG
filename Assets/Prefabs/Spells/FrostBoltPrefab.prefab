@@ -25,7 +25,7 @@ GameObject:
   - component: {fileID: 58194839111260910}
   - component: {fileID: 114980038207917110}
   m_Layer: 0
-  m_Name: FrostPrefab
+  m_Name: FrostBoltPrefab
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
