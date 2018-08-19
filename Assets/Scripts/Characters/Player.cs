@@ -109,7 +109,9 @@ public class Player : Character {
 		// Cast Time; Wait for Amount of Seconds
 		yield return new WaitForSeconds (1f);
 		// Instantiate a Spell (Get the First Spell, from possible Spell Prefabs, on the Player Pos, with Own Rot)
-		Instantiate(spellPrefabs[spellIndex], gemPoints[gemIndex].position, Quaternion.identity);
+		Spell s = Instantiate(spellPrefabs[spellIndex], gemPoints[gemIndex].position, Quaternion.identity).GetComponent<Spell>();
+		// Set the new Spells Target
+		s.MyTarget = MyTarget;
 		// After cast, Stop Attacking
 		StopAttack ();
 	}

@@ -33,10 +33,10 @@ public class GameDirector : MonoBehaviour {
 			RaycastHit2D hit = Physics2D.Raycast (Camera.main.ScreenToWorldPoint(Input.mousePosition), Vector2.zero, Mathf.Infinity, LayerMask.GetMask ("Clickable") );
 			// If raycast Hit something
 			if (hit != null) {
-				// If raycast Hit Collider with tag Enemy
-				if (hit.collider.tag == "Enemy") {
+				// If raycast Hit Collider with tag Enemy (!ADDED: "HIT.COLLIDER != NULL" to prevent Errors)
+				if (hit.collider != null && hit.collider.tag == "Enemy") {
 					// Set Target of Player to Object Clicked
-					player.MyTarget = hit.transform;
+					player.MyTarget = hit.transform.GetChild(0);
 				}
 			// Otherwise De-Target from previous target
 			} else {
