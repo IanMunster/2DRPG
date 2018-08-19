@@ -34,9 +34,8 @@ public class Player : Character {
 
 	// All Sightblock of Player to Check Line Of Sight
 	[SerializeField] private SightBlock[] sightBlocks;
-
-// DEBUG & TESTING PURPOSE ONLY
-	private Transform target;
+	// Property to Set the Target of an Attack
+	public Transform MyTarget { get; set; }
 
 
 	/// <summary> Overrides Update behaviour of Inherited class (Use this for initialization) </summary>
@@ -45,10 +44,6 @@ public class Player : Character {
 		health.Initialize (healthValue, initHealth);
 		// Initialize Players Mana Stat
 		mana.Initialize (initMana, initMana);
-
-// DEBUG & TESTING PURPOSE ONLY
-		target = GameObject.Find ("NPC_Target").transform;
-
 		// Call the Inherited overriden StartFunction
 		base.Start ();
 	}
@@ -107,8 +102,8 @@ public class Player : Character {
 		if (Input.GetKeyDown (KeyCode.Space)) {
 			// When Attacking Block the View Behind Player
 			BlockView ();
-			// Check if the Player is Not Attacking or Moving & In Line of Sight
-			if (!isAttacking && !IsMoving && InLineOfSight() ) {
+			// Check if the Player has a target, is Not Attacking or Moving & In Line of Sight
+			if (MyTarget != null && !isAttacking && !IsMoving && InLineOfSight() ) {
 				// Call the Attack IEnumerator
 				attackRoutine = StartCoroutine ( Attack() );
 			}
@@ -141,9 +136,9 @@ public class Player : Character {
 	/// <summary> Checks with Raycast if InLineOfSight or Blocked</summary>
 	private bool InLineOfSight () {
 		// Calculate the Direction of Target
-		Vector3 targetDirection = (target.position - transform.position).normalized;
+		Vector3 targetDirection = (MyTarget.position - transform.position).normalized;
 		// Cast a Ray (from player towards enemy, with distance of same range), on LayerMask 8 (viewBlock Layer)
-		RaycastHit2D hit = Physics2D.Raycast (transform.position, target.position, Vector2.Distance( transform.position, target.position ), LayerMask.GetMask("ViewBlock"));
+		RaycastHit2D hit = Physics2D.Raycast (transform.position, targetDirection, Vector2.Distance( transform.position, MyTarget.position ), LayerMask.GetMask("ViewBlock"));
 		// If Raycast doesnt Hit anything (no block of view)
 		if (hit.collider == null) {
 			// In Line of Sight
