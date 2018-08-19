@@ -48,24 +48,14 @@ public class Player : Character {
 
 	/// <summary> Function to GetInput from User (WASD)</summary>
 	private void GetInput () {
+//DEBUG
+		// Get Input When "I" is pressed Decrease Health & When "O" is pressed Increase Health
+		if (Input.GetKeyDown (KeyCode.I)) { health.MyCurrentValue -= 10f; mana.MyCurrentValue -= 10f; }
+		if (Input.GetKeyDown (KeyCode.O)) { health.MyCurrentValue += 10f; mana.MyCurrentValue += 10f; }
+//END DEBUG
+
 		// No Input; No Movement, sets Direction to Zero
 		direction = Vector2.zero;
-
-		//DEBUG
-		// Get Input When "I" is hold.
-		if (Input.GetKeyDown (KeyCode.I)) {
-			// Decrease Health
-			health.MyCurrentValue -= 10f;
-			mana.MyCurrentValue -= 10f;
-		}
-		// Get Input When "O" is hold.
-		if (Input.GetKeyDown (KeyCode.O)) {
-			// Increase Health
-			health.MyCurrentValue += 10f;
-			mana.MyCurrentValue += 10f;
-		}
-		//END DEBUG
-
 		// Get Input When "W" is hold.
 		if (Input.GetKey (KeyCode.W)) {
 			// Change Direction to Upwards Direction 
@@ -86,5 +76,22 @@ public class Player : Character {
 			// Change Direction to Right Direction 
 			direction += Vector2.right;
 		}
+
+		// Get Input when Space is Pressed
+		if (Input.GetKeyDown (KeyCode.Space)) {
+			// Call the Attack IEnumerator
+			StartCoroutine ( Attack() );
+		}
+	}
+
+
+	/// <summary> Function to Attack (IEnumerator to WaitForSecond Cast Time) </summary>
+	private IEnumerator Attack () {
+		// Set Character Is Attacking Bool to True to Activate the Correct Layer
+		isAttacking = true;
+		// Set the Animator to Attack Animation
+		myAnimator.SetBool ("Attack", isAttacking);
+		// Cast Cooldown Time; Wait for Amount of Seconds
+		yield return new WaitForSeconds (3f); // Debugging Purpose
 	}
 }

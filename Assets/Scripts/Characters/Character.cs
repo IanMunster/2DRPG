@@ -14,27 +14,29 @@ public abstract class Character : MonoBehaviour {
 	// Private Move Speed of Character (Test Default: 1.5f)
 	[SerializeField]
 	private float speed;
-	// Private Animator Controller Object (needed on the Character to Animate)
-	private Animator animator;
+	// Private myAnimator Controller Object (needed on the Character to Animate)
+	protected Animator myAnimator;
 	// Protected Move Direction of Character (still accessable to Player e.d)
 	protected Vector2 direction;
 	// Rigidbody Component for Movement
 	private Rigidbody2D rigidBody;
-
+	// Bool to Check If the Character Is Attacking
+	protected bool isAttacking = false;
 	///<summary> Property to Check if charater is moving in any Direction </summary>
-	public bool IsMoving { get{ return direction.x != 0 || direction.y != 0; }}
+	public bool IsMoving { get { return direction.x != 0 || direction.y != 0; } }
+
 
 	///<summary> Protected Virtual Update can be called from inheriting Classes (Use this for initialization)</summary>
 	protected virtual void Start () {
 		// Get the Components for the Character
-		animator = GetComponent<Animator> ();
+		myAnimator = GetComponent<Animator> ();
 		rigidBody = GetComponent<Rigidbody2D> ();
 	}
 
 
 	///<summary> Protected Virtual Update can be called from inheriting Classes (Update is called once per frame) </summary>
 	protected virtual void Update () {
-		// Update the Animator Layers
+		// Update the myAnimator Layers
 		HandleLayers ();
 	}
 
@@ -53,15 +55,19 @@ public abstract class Character : MonoBehaviour {
 	}
 
 
-	/// <summary> Function to Handle correct Animator Layers (Walk and Idle) </summary>
+	/// <summary> Function to Handle correct myAnimator Layers (Walk and Idle) </summary>
 	public void HandleLayers () {
-		// Check if the player is moving
+		// Check if the Character is moving
 		if (IsMoving) {
 			// Set Walk-AnimationLayer to front
 			ActivateLayer ("WalkLayer");
 			// Give Animators X & Y values for Movement & Idle Animations
-			animator.SetFloat ("X", direction.x);
-			animator.SetFloat ("Y", direction.y);
+			myAnimator.SetFloat ("X", direction.x);
+			myAnimator.SetFloat ("Y", direction.y);
+		// Check if the Character is Attacking
+		} else if (isAttacking) {
+			// Set the Attack-AnimationLayer to front
+			ActivateLayer ("AttackLayer");
 		} else {
 			//Set Idle-AnimationLayer to front
 			ActivateLayer ("IdleLayer");
@@ -69,14 +75,21 @@ public abstract class Character : MonoBehaviour {
 	}
 
 
-	/// <summary> Function to Activate the correct Animator Layers (String: Layer to Activate) </summary>
+	/// <summary> Function to Activate the correct myAnimator Layers (String: Layer to Activate) </summary>
 	public void ActivateLayer (string layerName) {
 		// Go through all possible Layers
-		for (int i = 0; i < animator.layerCount; i++) {
-			// Set all Layers in Animator to Disabled (0)
-			animator.SetLayerWeight (i, 0);
+		for (int i = 0; i < myAnimator.layerCount; i++) {
+			// Set all Layers in myAnimator to Disabled (0)
+			myAnimator.SetLayerWeight (i, 0);
 		}
 		//Enable Layer on Given Index by Name
-		animator.SetLayerWeight (animator.GetLayerIndex(layerName), 1);
+		myAnimator.SetLayerWeight (myAnimator.GetLayerIndex(layerName), 1);
+	}
+
+
+	/// <summary> Function to Stop Attacking </summary>
+	public void StopAttack () {
+		// !! CONTINUE TOMORROW
+
 	}
 }
