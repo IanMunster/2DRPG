@@ -66,7 +66,6 @@ public class Player : Character {
 		}
 		//END DEBUG
 
-
 		// Get Input When "W" is hold.
 		if (Input.GetKey (KeyCode.W)) {
 			// Change Direction to Upwards Direction 
