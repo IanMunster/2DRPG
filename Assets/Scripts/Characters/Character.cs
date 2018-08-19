@@ -14,14 +14,16 @@ public abstract class Character : MonoBehaviour {
 	// Private Move Speed of Character (Test Default: 1.5f)
 	[SerializeField]
 	private float speed;
-	// Private myAnimator Controller Object (needed on the Character to Animate)
-	protected Animator myAnimator;
-	// Protected Move Direction of Character (still accessable to Player e.d)
-	protected Vector2 direction;
 	// Rigidbody Component for Movement
 	private Rigidbody2D rigidBody;
+	// Protected Move Direction of Character (still accessable to Player e.d)
+	protected Vector2 direction;
+	// Private myAnimator Controller Object (needed on the Character to Animate)
+	protected Animator myAnimator;
 	// Bool to Check If the Character Is Attacking
 	protected bool isAttacking = false;
+	// Protected Attack Coroutine (needed to Stop Coroutine of Attacking when interupted)
+	protected Coroutine attackRoutine;
 	///<summary> Property to Check if charater is moving in any Direction </summary>
 	public bool IsMoving { get { return direction.x != 0 || direction.y != 0; } }
 
@@ -64,6 +66,9 @@ public abstract class Character : MonoBehaviour {
 			// Give Animators X & Y values for Movement & Idle Animations
 			myAnimator.SetFloat ("X", direction.x);
 			myAnimator.SetFloat ("Y", direction.y);
+			// When Moving, Interupt Attack
+			StopAttack ();
+
 		// Check if the Character is Attacking
 		} else if (isAttacking) {
 			// Set the Attack-AnimationLayer to front
@@ -89,7 +94,14 @@ public abstract class Character : MonoBehaviour {
 
 	/// <summary> Function to Stop Attacking </summary>
 	public void StopAttack () {
-		// !! CONTINUE TOMORROW
-
+		// Check if the player should be interupted / is Casting
+		if (attackRoutine != null) {
+			// Stop the Attack Coroutine for Casting
+			StopCoroutine (attackRoutine);
+			// Set character to not Attacking
+			isAttacking = false;
+			// Set the Animators Paramaters of Attack to false
+			myAnimator.SetBool ("isAttacking", isAttacking);
+		}
 	}
 }

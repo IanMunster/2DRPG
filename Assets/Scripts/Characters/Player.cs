@@ -80,18 +80,22 @@ public class Player : Character {
 		// Get Input when Space is Pressed
 		if (Input.GetKeyDown (KeyCode.Space)) {
 			// Call the Attack IEnumerator
-			StartCoroutine ( Attack() );
+			attackRoutine = StartCoroutine ( Attack() );
 		}
 	}
 
 
 	/// <summary> Function to Attack (IEnumerator to WaitForSecond Cast Time) </summary>
 	private IEnumerator Attack () {
-		// Set Character Is Attacking Bool to True to Activate the Correct Layer
-		isAttacking = true;
-		// Set the Animator to Attack Animation
-		myAnimator.SetBool ("Attack", isAttacking);
-		// Cast Cooldown Time; Wait for Amount of Seconds
-		yield return new WaitForSeconds (3f); // Debugging Purpose
+		if (!isAttacking && !IsMoving) {
+			// Set Character Is Attacking Bool to True to Activate the Correct Layer
+			isAttacking = true;
+			// Set the Animator to Attack Animation
+			myAnimator.SetBool ("isAttacking", isAttacking);
+			// Cast Time; Wait for Amount of Seconds
+			yield return new WaitForSeconds (5f); // Debugging Purpose
+			// After cast, Stop Attacking
+			StopAttack ();
+		}
 	}
 }
