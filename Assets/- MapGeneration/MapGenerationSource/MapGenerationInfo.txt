@@ -1,0 +1,12 @@
+# MAP Generation INFO:
+
+TileColor Ref:
+
+## Ground
+Grass0: 	# B6FF00FF
+Sand0: 		# FFD800FF
+Water0:		# 0026FFFF
+
+## Objects
+Tree0:		# 7F3300FF
+Bush0:		# C14D00FF
