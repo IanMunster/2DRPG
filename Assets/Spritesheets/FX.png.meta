@@ -4,90 +4,93 @@ timeCreated: 1534612570
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: FX_0
-    21300002: FX_1
-    21300004: FX_2
-    21300006: FX_5
-    21300008: FX_6
-    21300010: FX_7
-    21300012: FX_8
-    21300014: FX_9
-    21300016: FX_10
-    21300018: FX_13
-    21300020: FX_14
-    21300022: FX_17
-    21300024: FX_18
-    21300026: FX_27
-    21300028: FX_29
-    21300030: FX_31
-    21300032: FX_32
-    21300034: FX_33
-    21300036: FX_34
-    21300038: FX_35
-    21300040: FX_36
-    21300042: FX_37
-    21300044: FX_38
-    21300046: FX_39
-    21300048: FX_40
-    21300050: FX_49
-    21300052: FX_60
-    21300054: FX_61
-    21300056: FX_62
-    21300058: FX_63
-    21300060: FX_64
-    21300062: FX_65
-    21300064: FX_66
-    21300066: FX_67
-    21300068: FX_68
-    21300070: FX_69
-    21300072: FX_70
-    21300074: FX_72
-    21300076: FX_75
-    21300078: FX_76
-    21300080: FX_77
-    21300082: FX_78
-    21300084: FX_80
-    21300086: FX_82
-    21300088: FX_83
-    21300090: FX_84
-    21300092: FX_89
-    21300094: FX_90
-    21300096: FX_91
-    21300098: FX_92
-    21300100: FX_93
-    21300102: FX_94
-    21300104: FX_95
-    21300106: FX_96
-    21300108: FX_100
-    21300110: FX_102
-    21300112: FX_110
-    21300114: FX_118
-    21300116: FX_119
-    21300118: FX_120
-    21300120: FX_121
-    21300122: FX_122
-    21300124: FX_123
-    21300126: FX_126
-    21300128: FX_127
-    21300130: FX_128
-    21300132: FX_129
-    21300134: FX_130
-    21300136: FX_131
-    21300138: FX_132
-    21300140: FX_133
-    21300142: FX_134
-    21300144: FX_135
-    21300146: FX_136
-    21300148: FX_137
-    21300150: FX_138
-    21300152: FX_142
-    21300154: FX_147
-    21300156: FX_152
-    21300158: FX_157
-    21300160: FX_162
-    21300162: FX_167
-    21300164: FX_15
+    21300000: Shock_effect
+    21300002: ShockEffect
+    21300004: Shock10
+    21300006: Shock2
+    21300008: Shock3
+    21300010: Shock4
+    21300012: Shock5
+    21300014: Shock6
+    21300016: Shock7
+    21300018: Shock13
+    21300020: Shock1
+    21300022: Shock14
+    21300024: Shock12
+    21300026: Fire3
+    21300028: Fire4
+    21300030: Fire5
+    21300032: Fire6
+    21300034: Fire7
+    21300036: Fire8
+    21300038: Fire9
+    21300040: Fire10
+    21300042: Fire11
+    21300044: Fire12
+    21300046: Fire1
+    21300048: Fire2
+    21300050: Fire13
+    21300052: Frost2
+    21300054: Frost3
+    21300056: Frost4
+    21300058: Frost5
+    21300060: Frost6
+    21300062: Frost7
+    21300064: Frost8
+    21300066: Frost9
+    21300068: Frost10
+    21300070: Frost11
+    21300072: Frost12
+    21300074: Frost1
+    21300076: Heal3
+    21300078: Heal4
+    21300080: Heal5
+    21300082: Heal6
+    21300084: Heal7
+    21300086: Heal8
+    21300088: Heal1
+    21300090: Heal2
+    21300092: Zap1
+    21300094: Zap2
+    21300096: Zap3
+    21300098: Zap4
+    21300100: Hit1
+    21300102: Hit2
+    21300104: Hit3
+    21300106: Hit4
+    21300108: Ash1
+    21300110: Ash2
+    21300112: Ash9
+    21300114: Ash6
+    21300116: Ash7
+    21300118: Ash8
+    21300120: Ash3
+    21300122: Ash4
+    21300124: Ash5
+    21300126: Ice1
+    21300128: Ice2
+    21300130: Ice3
+    21300132: Ice4
+    21300134: Ice5
+    21300136: Ice6
+    21300138: Ice7
+    21300140: Ice8
+    21300142: Ice9
+    21300144: Ice10
+    21300146: Ice11
+    21300148: Conf1
+    21300150: Conf2
+    21300152: Conf3
+    21300154: Conf4
+    21300156: Conf5
+    21300158: Conf6
+    21300160: Conf7
+    21300162: Conf8
+    21300164: Shock11
     21300166: FX_3
+    21300168: Shock8
+    21300170: Shock9
+    21300172: Shock
   externalObjects: {}
   serializedVersion: 4
   mipmaps:
@@ -184,189 +187,189 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: FX_0
+      name: Shock8
       rect:
         serializedVersion: 2
         x: 1099
         y: 1298
         width: 123
         height: 120
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: FX_1
+      name: Shock9
       rect:
         serializedVersion: 2
         x: 1259
         y: 1289
         width: 123
         height: 138
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: FX_2
+      name: Shock10
       rect:
         serializedVersion: 2
         x: 1427
         y: 1285
         width: 108
         height: 147
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: FX_5
+      name: Shock2
       rect:
         serializedVersion: 2
         x: 147
         y: 1335
         width: 108
         height: 47
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: FX_6
+      name: Shock3
       rect:
         serializedVersion: 2
         x: 299
         y: 1319
         width: 123
         height: 78
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: FX_7
+      name: Shock4
       rect:
         serializedVersion: 2
         x: 459
         y: 1315
         width: 123
         height: 87
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: FX_8
+      name: Shock5
       rect:
         serializedVersion: 2
         x: 619
         y: 1309
         width: 123
         height: 98
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: FX_9
+      name: Shock6
       rect:
         serializedVersion: 2
         x: 779
         y: 1304
         width: 123
         height: 108
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: FX_10
+      name: Shock7
       rect:
         serializedVersion: 2
         x: 939
         y: 1304
         width: 123
         height: 108
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: FX_13
+      name: Shock12
       rect:
         serializedVersion: 2
         x: 1769
         y: 1335
         width: 63
         height: 47
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: FX_14
+      name: Shock1
       rect:
         serializedVersion: 2
         x: 2
         y: 1342
         width: 78
         height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: FX_17
+      name: Shock13
       rect:
         serializedVersion: 2
         x: 1948
         y: 1348
         width: 25
         height: 20
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: FX_18
+      name: Shock11
       rect:
         serializedVersion: 2
         x: 1587
         y: 1288
         width: 108
         height: 141
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: FX_27
+      name: Fire3
       rect:
         serializedVersion: 2
         x: 341
@@ -374,13 +377,13 @@ TextureImporter:
         width: 40
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: FX_29
+      name: Fire4
       rect:
         serializedVersion: 2
         x: 474
@@ -388,13 +391,13 @@ TextureImporter:
         width: 93
         height: 93
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: FX_31
+      name: Fire5
       rect:
         serializedVersion: 2
         x: 619
@@ -402,13 +405,13 @@ TextureImporter:
         width: 123
         height: 123
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: FX_32
+      name: Fire6
       rect:
         serializedVersion: 2
         x: 794
@@ -416,13 +419,13 @@ TextureImporter:
         width: 93
         height: 90
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: FX_33
+      name: Fire7
       rect:
         serializedVersion: 2
         x: 947
@@ -430,13 +433,13 @@ TextureImporter:
         width: 107
         height: 90
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: FX_34
+      name: Fire8
       rect:
         serializedVersion: 2
         x: 1098
@@ -444,13 +447,13 @@ TextureImporter:
         width: 125
         height: 90
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: FX_35
+      name: Fire9
       rect:
         serializedVersion: 2
         x: 1249
@@ -458,13 +461,13 @@ TextureImporter:
         width: 144
         height: 80
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: FX_36
+      name: Fire10
       rect:
         serializedVersion: 2
         x: 1448
@@ -472,13 +475,13 @@ TextureImporter:
         width: 66
         height: 66
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: FX_37
+      name: Fire11
       rect:
         serializedVersion: 2
         x: 1604
@@ -486,13 +489,13 @@ TextureImporter:
         width: 74
         height: 50
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: FX_38
+      name: Fire12
       rect:
         serializedVersion: 2
         x: 1776
@@ -500,13 +503,13 @@ TextureImporter:
         width: 50
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: FX_39
+      name: Fire1
       rect:
         serializedVersion: 2
         x: 32
@@ -514,13 +517,13 @@ TextureImporter:
         width: 17
         height: 17
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: FX_40
+      name: Fire2
       rect:
         serializedVersion: 2
         x: 188
@@ -528,13 +531,13 @@ TextureImporter:
         width: 25
         height: 20
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: FX_49
+      name: Fire13
       rect:
         serializedVersion: 2
         x: 1950
@@ -542,13 +545,13 @@ TextureImporter:
         width: 21
         height: 17
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: FX_60
+      name: Frost2
       rect:
         serializedVersion: 2
         x: 175
@@ -556,13 +559,13 @@ TextureImporter:
         width: 52
         height: 52
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: FX_61
+      name: Frost3
       rect:
         serializedVersion: 2
         x: 330
@@ -570,13 +573,13 @@ TextureImporter:
         width: 61
         height: 61
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: FX_62
+      name: Frost4
       rect:
         serializedVersion: 2
         x: 457
@@ -584,13 +587,13 @@ TextureImporter:
         width: 127
         height: 129
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: FX_63
+      name: Frost5
       rect:
         serializedVersion: 2
         x: 604
@@ -598,13 +601,13 @@ TextureImporter:
         width: 155
         height: 155
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: FX_64
+      name: Frost6
       rect:
         serializedVersion: 2
         x: 775
@@ -612,13 +615,13 @@ TextureImporter:
         width: 132
         height: 129
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: FX_65
+      name: Frost7
       rect:
         serializedVersion: 2
         x: 936
@@ -626,13 +629,13 @@ TextureImporter:
         width: 130
         height: 139
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: FX_66
+      name: Frost8
       rect:
         serializedVersion: 2
         x: 1096
@@ -640,13 +643,13 @@ TextureImporter:
         width: 129
         height: 136
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: FX_67
+      name: Frost9
       rect:
         serializedVersion: 2
         x: 1268
@@ -654,13 +657,13 @@ TextureImporter:
         width: 106
         height: 115
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: FX_68
+      name: Frost10
       rect:
         serializedVersion: 2
         x: 1424
@@ -668,13 +671,13 @@ TextureImporter:
         width: 114
         height: 106
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: FX_69
+      name: Frost11
       rect:
         serializedVersion: 2
         x: 1569
@@ -682,13 +685,13 @@ TextureImporter:
         width: 144
         height: 152
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: FX_70
+      name: Frost12
       rect:
         serializedVersion: 2
         x: 1743
@@ -696,13 +699,13 @@ TextureImporter:
         width: 117
         height: 171
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: FX_72
+      name: Frost1
       rect:
         serializedVersion: 2
         x: 23
@@ -710,13 +713,13 @@ TextureImporter:
         width: 35
         height: 35
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: FX_75
+      name: Heal3
       rect:
         serializedVersion: 2
         x: 337
@@ -724,13 +727,13 @@ TextureImporter:
         width: 47
         height: 47
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: FX_76
+      name: Heal4
       rect:
         serializedVersion: 2
         x: 482
@@ -738,13 +741,13 @@ TextureImporter:
         width: 78
         height: 78
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: FX_77
+      name: Heal5
       rect:
         serializedVersion: 2
         x: 627
@@ -752,13 +755,13 @@ TextureImporter:
         width: 108
         height: 93
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: FX_78
+      name: Heal6
       rect:
         serializedVersion: 2
         x: 772
@@ -766,13 +769,13 @@ TextureImporter:
         width: 138
         height: 138
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: FX_80
+      name: Heal7
       rect:
         serializedVersion: 2
         x: 939
@@ -780,13 +783,13 @@ TextureImporter:
         width: 123
         height: 123
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: FX_82
+      name: Heal8
       rect:
         serializedVersion: 2
         x: 1084
@@ -794,13 +797,13 @@ TextureImporter:
         width: 153
         height: 153
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: FX_83
+      name: Heal1
       rect:
         serializedVersion: 2
         x: 32
@@ -808,13 +811,13 @@ TextureImporter:
         width: 17
         height: 17
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: FX_84
+      name: Heal2
       rect:
         serializedVersion: 2
         x: 185
@@ -822,13 +825,13 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: FX_89
+      name: Zap1
       rect:
         serializedVersion: 2
         x: 17
@@ -836,13 +839,13 @@ TextureImporter:
         width: 47
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: FX_90
+      name: Zap2
       rect:
         serializedVersion: 2
         x: 150
@@ -850,13 +853,13 @@ TextureImporter:
         width: 101
         height: 54
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: FX_91
+      name: Zap3
       rect:
         serializedVersion: 2
         x: 291
@@ -864,13 +867,13 @@ TextureImporter:
         width: 139
         height: 65
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: FX_92
+      name: Zap4
       rect:
         serializedVersion: 2
         x: 442
@@ -878,13 +881,13 @@ TextureImporter:
         width: 157
         height: 81
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: FX_93
+      name: Hit1
       rect:
         serializedVersion: 2
         x: 670
@@ -892,13 +895,13 @@ TextureImporter:
         width: 21
         height: 25
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: FX_94
+      name: Hit2
       rect:
         serializedVersion: 2
         x: 802
@@ -906,13 +909,13 @@ TextureImporter:
         width: 78
         height: 78
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: FX_95
+      name: Hit3
       rect:
         serializedVersion: 2
         x: 951
@@ -920,13 +923,13 @@ TextureImporter:
         width: 100
         height: 100
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: FX_96
+      name: Hit4
       rect:
         serializedVersion: 2
         x: 1103
@@ -934,293 +937,293 @@ TextureImporter:
         width: 115
         height: 115
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: FX_100
+      name: Ash1
       rect:
         serializedVersion: 2
         x: 0
         y: 380
         width: 81
         height: 36
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: FX_102
+      name: Ash2
       rect:
         serializedVersion: 2
         x: 158
         y: 371
         width: 84
         height: 55
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: FX_110
+      name: Ash9
       rect:
         serializedVersion: 2
         x: 1280
         y: 388
         width: 81
         height: 21
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: FX_118
+      name: Ash6
       rect:
         serializedVersion: 2
         x: 800
         y: 376
         width: 81
         height: 43
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: FX_119
+      name: Ash7
       rect:
         serializedVersion: 2
         x: 957
         y: 378
         width: 87
         height: 39
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: FX_120
+      name: Ash8
       rect:
         serializedVersion: 2
         x: 1120
         y: 378
         width: 81
         height: 39
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: FX_121
+      name: Ash3
       rect:
         serializedVersion: 2
         x: 320
         y: 356
         width: 81
         height: 85
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: FX_122
+      name: Ash4
       rect:
         serializedVersion: 2
         x: 480
         y: 350
         width: 81
         height: 97
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: FX_123
+      name: Ash5
       rect:
         serializedVersion: 2
         x: 640
         y: 342
         width: 81
         height: 112
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: FX_126
+      name: Ice1
       rect:
         serializedVersion: 2
         x: 33
         y: 200
         width: 15
         height: 13
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: FX_127
+      name: Ice2
       rect:
         serializedVersion: 2
         x: 186
         y: 194
         width: 29
         height: 25
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: FX_128
+      name: Ice3
       rect:
         serializedVersion: 2
         x: 340
         y: 188
         width: 41
         height: 36
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: FX_129
+      name: Ice4
       rect:
         serializedVersion: 2
         x: 492
         y: 186
         width: 55
         height: 43
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: FX_130
+      name: Ice5
       rect:
         serializedVersion: 2
         x: 649
         y: 177
         width: 66
         height: 55
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: FX_131
+      name: Ice6
       rect:
         serializedVersion: 2
         x: 805
         y: 173
         width: 70
         height: 65
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: FX_132
+      name: Ice7
       rect:
         serializedVersion: 2
         x: 970
         y: 181
         width: 62
         height: 51
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: FX_133
+      name: Ice8
       rect:
         serializedVersion: 2
         x: 1126
         y: 183
         width: 70
         height: 46
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: FX_134
+      name: Ice9
       rect:
         serializedVersion: 2
         x: 1280
         y: 190
         width: 81
         height: 33
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: FX_135
+      name: Ice10
       rect:
         serializedVersion: 2
         x: 1434
         y: 192
         width: 93
         height: 28
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: FX_136
+      name: Ice11
       rect:
         serializedVersion: 2
         x: 1587
         y: 192
         width: 108
         height: 28
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: FX_137
+      name: Conf1
       rect:
         serializedVersion: 2
         x: 17
@@ -1228,13 +1231,13 @@ TextureImporter:
         width: 47
         height: 17
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: FX_138
+      name: Conf2
       rect:
         serializedVersion: 2
         x: 163
@@ -1242,13 +1245,13 @@ TextureImporter:
         width: 76
         height: 19
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: FX_142
+      name: Conf3
       rect:
         serializedVersion: 2
         x: 304
@@ -1256,13 +1259,13 @@ TextureImporter:
         width: 115
         height: 28
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: FX_147
+      name: Conf4
       rect:
         serializedVersion: 2
         x: 459
@@ -1270,13 +1273,13 @@ TextureImporter:
         width: 123
         height: 25
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: FX_152
+      name: Conf5
       rect:
         serializedVersion: 2
         x: 619
@@ -1284,13 +1287,13 @@ TextureImporter:
         width: 123
         height: 28
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: FX_157
+      name: Conf6
       rect:
         serializedVersion: 2
         x: 779
@@ -1298,13 +1301,13 @@ TextureImporter:
         width: 123
         height: 25
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: FX_162
+      name: Conf7
       rect:
         serializedVersion: 2
         x: 939
@@ -1312,13 +1315,13 @@ TextureImporter:
         width: 123
         height: 28
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: FX_167
+      name: Conf8
       rect:
         serializedVersion: 2
         x: 1099
@@ -1326,13 +1329,13 @@ TextureImporter:
         width: 123
         height: 25
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: FX_15
+      name: Shock
       rect:
         serializedVersion: 2
         x: 1427
@@ -1340,21 +1343,7 @@ TextureImporter:
         width: 63
         height: 75
       alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: FX_3
-      rect:
-        serializedVersion: 2
-        x: 1587
-        y: 1288
-        width: 40
-        height: 47
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []

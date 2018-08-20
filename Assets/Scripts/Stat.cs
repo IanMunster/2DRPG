@@ -6,7 +6,7 @@ using UnityEngine.UI; // needed for UI Components
 /// <summary>
 /// Stat.
 /// Get UI Component for Stat
-/// Keeps CurrentValue
+/// Initializes Health & Keeps CurrentValue
 /// </summary>
 
 public class Stat : MonoBehaviour {
@@ -44,9 +44,11 @@ public class Stat : MonoBehaviour {
 			}
 			// Set the Fill of UI; Current Fill / Max Value (between 0&1)
 			currentFill = currentValue / MyMaxValue;
-
-			// Set the Text UI to Current Amount
-			textValue.text = name + " :  " + currentValue + " / " + MyMaxValue;
+			// If stat has a UI Text Component
+			if (textValue != null) {
+				// Set the Text UI to Current Amount
+				textValue.text = name + " :  " + currentValue + " / " + MyMaxValue;
+			}
 		}
 	}
 

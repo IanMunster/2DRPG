@@ -10,8 +10,6 @@ using UnityEngine.UI;
 
 public class SpellBook : MonoBehaviour {
 
-	// Speed of Fade In/Out of Castingbar
-	[SerializeField] private float fadeSpeed;
 	// Casting bar on UI to Change Castbar Color
 	[SerializeField] private Image castingBar;
 	// UI to show Name of the Spell being Cast
@@ -59,7 +57,7 @@ public class SpellBook : MonoBehaviour {
 	// Function to Fade progressBar in and Out
 	private IEnumerator FadeCastBar () {
 		// Rate of Fade (based on Cast Time of Spell)
-		float rate = (1.0f / fadeSpeed);
+		float rate = 0.5f;
 		// Current Fade value
 		float value = 0.0f;
 		// While progress of Fade is below 1 (100 procent)

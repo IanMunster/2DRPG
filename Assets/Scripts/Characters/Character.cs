@@ -5,7 +5,9 @@ using UnityEngine;
 /// <summary>
 /// Character.
 /// Moves Characters.
-/// Animates Characters; Idle State
+/// Animates Characters; Idle State & Attack
+/// Handle Animation Layers
+/// Take Damages
 /// </summary>
 
 // required components of Character
@@ -20,20 +22,33 @@ public abstract class Character : MonoBehaviour {
 	private Rigidbody2D rigidBody;
 	// Protected Move Direction of Character (still accessable to Player e.d)
 	protected Vector2 direction;
+
 	// Private myAnimator Controller Object (needed on the Character to Animate)
 	protected Animator myAnimator;
+
 	// Bool to Check If the Character Is Attacking
 	protected bool isAttacking = false;
 	// Protected Attack Coroutine (needed to Stop Coroutine of Attacking when interupted)
 	protected Coroutine attackRoutine;
-	/// <summary> Property to Check if charater is moving in any Direction </summary>
-	public bool IsMoving { get { return direction.x != 0 || direction.y != 0; } }
 	// Hitbox for Selecting (with mouse Click) of Character
 	[SerializeField] protected Transform hitBox;
+
+	// Health stat of Character
+	[SerializeField] protected Stat health;
+	// Initial max ammount of Health
+	[SerializeField] private float initHealth;
+
+	/// <summary> Property to Check if charater is moving in any Direction </summary>
+	public bool IsMoving { get { return direction.x != 0 || direction.y != 0; } }
+
+
 
 
 	/// <summary> Protected Virtual Update can be called from inheriting Classes (Use this for initialization)</summary>
 	protected virtual void Start () {
+		// Initialize Characters Health Stat 
+		health.Initialize (initHealth, initHealth);
+
 		// Get the Components for the Character
 		myAnimator = GetComponent<Animator> ();
 		rigidBody = GetComponent<Rigidbody2D> ();
@@ -106,6 +121,18 @@ public abstract class Character : MonoBehaviour {
 		if (attackRoutine != null) {
 			// Stop the Attack Coroutine for Casting
 			StopCoroutine (attackRoutine);
+		}
+	}
+
+
+	/// <summary> Function to Take Damage (float amount DMG) </summary>
+	public virtual void TakeDamage (float damage) {
+		// Reduce Health
+		health.MyCurrentValue -= damage;
+		// Check if the Character has No Health left
+		if (health.MyCurrentValue <= 0) {
+			// Character is Dead
+			myAnimator.SetTrigger ("Die");
 		}
 	}
 }

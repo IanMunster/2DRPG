@@ -13,13 +13,6 @@ using UnityEngine;
 // Inherits from Character Class
 public class Player : Character {
 
-	//Health Stat of player
-	[SerializeField] private Stat health;
-	// Initial max ammount of Health
-	private float initHealth = 100f;
-	// Current ammount of Health
-	[SerializeField] private float healthValue;
-
 	// Mana Stat of player
 	[SerializeField] private Stat mana;
 	// Initial ammount of Mana (Max&Current)
@@ -43,8 +36,6 @@ public class Player : Character {
 	protected override void Start () {
 		// Find the Players SpellBook
 		spellBook = GetComponent <SpellBook> ();
-		// Initialize Players Health Stat 
-		health.Initialize (healthValue, initHealth);
 		// Initialize Players Mana Stat
 		mana.Initialize (initMana, initMana);
 		// Call the Inherited overriden StartFunction
@@ -119,8 +110,8 @@ public class Player : Character {
 		if (currentTarget != null && InLineOfSight() ) {
 			// Instantiate a Spell (Get the First Spell, from possible Spell Prefabs, on the Player Pos, with Own Rot)
 			SpellScript s = Instantiate(newSpell.MySpellPrefab, gemPoints[gemIndex].position, Quaternion.identity).GetComponent<SpellScript>();
-			// Set the new Spells Target
-			s.MyTarget = currentTarget;
+			// Initialize new Spell ( Set target & Damage )
+			s.Initialize( currentTarget, newSpell.MyDamage);
 		}
 		// After cast, Stop Attacking
 		StopAttack ();
@@ -141,16 +132,19 @@ public class Player : Character {
 
 	/// <summary> Checks with Raycast if InLineOfSight or Blocked</summary>
 	private bool InLineOfSight () {
-		// Calculate the Direction of Target
-		Vector3 targetDirection = (MyTarget.position - transform.position).normalized;
-		// Cast a Ray (from player towards enemy, with distance of same range), on LayerMask 8 (viewBlock Layer)
-		RaycastHit2D hit = Physics2D.Raycast (transform.position, targetDirection, Vector2.Distance( transform.position, MyTarget.position ), LayerMask.GetMask("ViewBlock"));
-		// If Raycast doesnt Hit anything (no block of view)
-		if (hit.collider == null) {
-			// In Line of Sight
-			return true;
+		// check if there still is a target
+		if (MyTarget != null) {
+			// Calculate the Direction of Target
+			Vector3 targetDirection = (MyTarget.position - transform.position).normalized;
+			// Cast a Ray (from player towards enemy, with distance of same range), on LayerMask 8 (viewBlock Layer)
+			RaycastHit2D hit = Physics2D.Raycast (transform.position, targetDirection, Vector2.Distance( transform.position, MyTarget.position ), LayerMask.GetMask("ViewBlock"));
+			// If Raycast doesnt Hit anything (no block of view)
+			if (hit.collider == null) {
+				// In Line of Sight
+				return true;
+			}
 		}
-		// Default return false (view Blocked)
+		// Default return false (view Blocked or No Target)
 		return false;
 	}
 

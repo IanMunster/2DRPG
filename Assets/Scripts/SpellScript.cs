@@ -13,12 +13,11 @@ public class SpellScript : MonoBehaviour {
 	private Rigidbody2D rigidBody;
 	// Speed value of Spell Movement (serialized for testing)
 	[SerializeField] private float speed;
+	// Damage value of Spell
+	private float damage;
 
 	// Target of the Spell
-	public Transform MyTarget {
-		get;
-		set;
-	}
+	public Transform MyTarget { get; private set; }
 
 
 	// Use this for initialization
@@ -27,11 +26,17 @@ public class SpellScript : MonoBehaviour {
 		rigidBody = GetComponent <Rigidbody2D> ();
 	}
 
+
+	/// <summary> Function to Initialize Spell (target,damage) </summary>
+	public void Initialize (Transform target, float damage) {
+		// Set given Target & damage
+		this.MyTarget = target;
+		this.damage = damage;
+	}
+
 	
 	// Update is called once per frame
-	void Update () {
-		
-	}
+	void Update () {}
 
 
 	// Update every Physics update
@@ -54,7 +59,11 @@ public class SpellScript : MonoBehaviour {
 	private void OnTriggerEnter2D (Collider2D collision) {
 		// If Spell Collides with an Enemy Hitbox and Position is Correct
 		if (collision.tag == "HitBox" && collision.transform == MyTarget) {
-			// Set the Animator to Impact (to show Smoke)
+			// When target hits, stop moving
+			speed = 0;
+			// Get the ParentObject of Hitbox ; Enemy, to take Damage
+			collision.GetComponentInParent<Enemy> ().TakeDamage (damage);
+			// Set the Animator to Impact (to sh		ow Smoke)
 			GetComponent<Animator>().SetTrigger("Impact");
 			// Reset the Velocity (movement) of Spell
 			rigidBody.velocity = Vector2.zero;
