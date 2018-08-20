@@ -29,4 +29,14 @@ public class Enemy : NPC {
 		// Call base of Deselect
 		base.Deselect ();
 	}
+
+
+	// Override of NPC take Damage Function
+	public override void TakeDamage (float damage) {
+		// Call Base TakeDamage (reduces health)
+		base.TakeDamage (damage);
+
+		// Trigger OnHealthChanged Event (sent current health value (after subtrackting))
+		OnHealthChanged (health.MyCurrentValue);
+	}
 }

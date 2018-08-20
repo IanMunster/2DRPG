@@ -16,6 +16,7 @@ using UnityEngine;
 // Abstract Class (Can't be added to a Object on its own)
 public abstract class Character : MonoBehaviour {
 
+	//Movement Vars
 	// Private Move Speed of Character (Test Default: 1.5f)
 	[SerializeField] private float speed;
 	// Rigidbody Component for Movement
@@ -23,9 +24,11 @@ public abstract class Character : MonoBehaviour {
 	// Protected Move Direction of Character (still accessable to Player e.d)
 	protected Vector2 direction;
 
+	//Animator Vars
 	// Private myAnimator Controller Object (needed on the Character to Animate)
 	protected Animator myAnimator;
 
+	//Attack Vars
 	// Bool to Check If the Character Is Attacking
 	protected bool isAttacking = false;
 	// Protected Attack Coroutine (needed to Stop Coroutine of Attacking when interupted)
@@ -33,15 +36,16 @@ public abstract class Character : MonoBehaviour {
 	// Hitbox for Selecting (with mouse Click) of Character
 	[SerializeField] protected Transform hitBox;
 
-	// Health stat of Character
-	[SerializeField] protected Stat health;
+	//Health Vars
 	// Initial max ammount of Health
 	[SerializeField] private float initHealth;
+	// Health stat of Character
+	[SerializeField] protected Stat health;
+	// Health Property of Character
+	public Stat MyHealth { get {return health;} }
 
 	/// <summary> Property to Check if charater is moving in any Direction </summary>
 	public bool IsMoving { get { return direction.x != 0 || direction.y != 0; } }
-
-
 
 
 	/// <summary> Protected Virtual Update can be called from inheriting Classes (Use this for initialization)</summary>

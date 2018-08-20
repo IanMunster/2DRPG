@@ -45,7 +45,12 @@ public class GameDirector : MonoBehaviour {
 				currentTarget = hit.collider.GetComponent<NPC> ();
 				// Set new Target Selected to Player
 				player.MyTarget = currentTarget.Select ();
+				// Call Singleton Instance of UIDirector to Show UI Targets Frame
+				UIDirector.MyInstance.ShowTargetFrame (currentTarget);
+			// othrwise Deselect Target
 			} else {
+				// Call Singleton Instance of UIDirector to Hide UI Target Frame
+				UIDirector.MyInstance.HideTargetFrame ();
 				// If no Target & no Clickable Target hit
 				if (currentTarget != null) {
 					// Deselect the Target / Previous target
