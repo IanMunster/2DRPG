@@ -105,6 +105,8 @@ public class Player : Character {
 
 	/// <summary> Function to Attack (IEnumerator to WaitForSecond Cast Time) </summary>
 	private IEnumerator Attack (int spellIndex) {
+		// Current Target is Last Clicked Target
+		Transform currentTarget = MyTarget; 
 		// Get a new Spell from Spellbook (on Index of Array)
 		Spell newSpell = spellBook.CastSpell(spellIndex);
 		// Set Character Is Attacking to True to Activate the Attack Layer
@@ -113,10 +115,13 @@ public class Player : Character {
 		myAnimator.SetBool ("isAttacking", isAttacking);
 		// Cast Time; Wait for Amount of Seconds
 		yield return new WaitForSeconds (newSpell.MyCastTime);
-		// Instantiate a Spell (Get the First Spell, from possible Spell Prefabs, on the Player Pos, with Own Rot)
-		SpellScript s = Instantiate(newSpell.MySpellPrefab, gemPoints[gemIndex].position, Quaternion.identity).GetComponent<SpellScript>();
-		// Set the new Spells Target
-		s.MyTarget = MyTarget;
+		// Check if Target is Still there & InLine of Sight
+		if (currentTarget != null && InLineOfSight() ) {
+			// Instantiate a Spell (Get the First Spell, from possible Spell Prefabs, on the Player Pos, with Own Rot)
+			SpellScript s = Instantiate(newSpell.MySpellPrefab, gemPoints[gemIndex].position, Quaternion.identity).GetComponent<SpellScript>();
+			// Set the new Spells Target
+			s.MyTarget = currentTarget;
+		}
 		// After cast, Stop Attacking
 		StopAttack ();
 	}

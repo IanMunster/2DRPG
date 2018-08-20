@@ -13,6 +13,9 @@ public class GameDirector : MonoBehaviour {
 	// Reference to Player
 	[SerializeField] private Player player;
 
+	// Reference to Current Target NPC
+	private NPC currentTarget;
+
 	// Use this for initialization
 	void Start () {
 		
@@ -32,14 +35,24 @@ public class GameDirector : MonoBehaviour {
 			// Raycast from MousePosition into GameWorld on Clickable LayerMask
 			RaycastHit2D hit = Physics2D.Raycast (Camera.main.ScreenToWorldPoint(Input.mousePosition), Vector2.zero, Mathf.Infinity, LayerMask.GetMask ("Clickable") );
 			// If raycast Hit something
-			if (hit != null) {
-				// If raycast Hit Collider with tag Enemy (!ADDED: "HIT.COLLIDER != NULL" to prevent Errors)
-				if (hit.collider != null && hit.collider.tag == "Enemy") {
-					// Set Target of Player to Object Clicked
-					player.MyTarget = hit.transform.GetChild(0);
+			if (hit.collider != null) {
+				// Check if there is a Target
+				if (currentTarget != null) {
+					// Deselect the previous Target
+					currentTarget.Deselect ();
 				}
-			// Otherwise De-Target from previous target
+				// Set new Hit Target
+				currentTarget = hit.collider.GetComponent<NPC> ();
+				// Set new Target Selected to Player
+				player.MyTarget = currentTarget.Select ();
 			} else {
+				// If no Target & no Clickable Target hit
+				if (currentTarget != null) {
+					// Deselect the Target / Previous target
+					currentTarget.Deselect ();
+				}
+				// Empty Target ref
+				currentTarget = null;
 				player.MyTarget = null;
 			}
 		}

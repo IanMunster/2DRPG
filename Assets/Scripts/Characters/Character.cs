@@ -8,6 +8,9 @@ using UnityEngine;
 /// Animates Characters; Idle State
 /// </summary>
 
+// required components of Character
+[RequireComponent(typeof(Rigidbody2D))]
+[RequireComponent(typeof(Animator))]
 // Abstract Class (Can't be added to a Object on its own)
 public abstract class Character : MonoBehaviour {
 
@@ -23,11 +26,13 @@ public abstract class Character : MonoBehaviour {
 	protected bool isAttacking = false;
 	// Protected Attack Coroutine (needed to Stop Coroutine of Attacking when interupted)
 	protected Coroutine attackRoutine;
-	///<summary> Property to Check if charater is moving in any Direction </summary>
+	/// <summary> Property to Check if charater is moving in any Direction </summary>
 	public bool IsMoving { get { return direction.x != 0 || direction.y != 0; } }
+	// Hitbox for Selecting (with mouse Click) of Character
+	[SerializeField] protected Transform hitBox;
 
 
-	///<summary> Protected Virtual Update can be called from inheriting Classes (Use this for initialization)</summary>
+	/// <summary> Protected Virtual Update can be called from inheriting Classes (Use this for initialization)</summary>
 	protected virtual void Start () {
 		// Get the Components for the Character
 		myAnimator = GetComponent<Animator> ();
@@ -35,7 +40,7 @@ public abstract class Character : MonoBehaviour {
 	}
 
 
-	///<summary> Protected Virtual Update can be called from inheriting Classes (Update is called once per frame) </summary>
+	/// <summary> Protected Virtual Update can be called from inheriting Classes (Update is called once per frame) </summary>
 	protected virtual void Update () {
 		// Update the myAnimator Layers
 		HandleLayers ();
