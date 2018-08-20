@@ -1830,8 +1830,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 0
   hitBox: {fileID: 1682347113}
-  initHealth: 50
+  initHealth: 10
   health: {fileID: 63215430}
+  portrait: {fileID: 21300000, guid: 657dced4c13294d479a288242902ea1d, type: 3}
   healthGroup: {fileID: 2014021277}
 --- !u!50 &711544588
 Rigidbody2D:
@@ -2237,6 +2238,7 @@ MonoBehaviour:
   - {fileID: 2143600887}
   - {fileID: 1707879731}
   targetFrame: {fileID: 551437971}
+  portaitFrame: {fileID: 1245444447}
 --- !u!4 &1071334291
 Transform:
   m_ObjectHideFlags: 0
@@ -2512,7 +2514,7 @@ GameObject:
   - component: {fileID: 1245444448}
   - component: {fileID: 1245444447}
   m_Layer: 5
-  m_Name: PortraitFace
+  m_Name: TargetPortrait
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2555,7 +2557,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 657dced4c13294d479a288242902ea1d, type: 3}
+  m_Sprite: {fileID: 21300086, guid: 76a8f3bcdd2d088408d1c795893f8e9b, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1

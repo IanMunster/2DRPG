@@ -33,6 +33,8 @@ public class UIDirector : MonoBehaviour {
 	[SerializeField] private GameObject targetFrame;
 	// Reference to Targeted Health Stat
 	private Stat healthStat;
+	// TargetFrame Portrait Image Frame
+	[SerializeField] private Image portaitFrame;
 
 
 	// Use this for initialization
@@ -78,9 +80,12 @@ public class UIDirector : MonoBehaviour {
 		targetFrame.SetActive (true);
 		// Set Health of TargetFrame to targeted Health
 		healthStat.Initialize (target.MyHealth.MyCurrentValue, target.MyHealth.MyMaxValue);
-
+		// Set Correct Portrait
+		portaitFrame.sprite = target.MyPortrait;
 		// Listen to HealthChanged Event
 		target.healthChanged += new HealthChanged (UpdateTargetFrame);
+		// Listen to CharacterRemoved Event
+		target.characterRemoved += new CharacterRemoved (HideTargetFrame);
 	}
 
 	// Function to Update UI TargetFrame Health Stat

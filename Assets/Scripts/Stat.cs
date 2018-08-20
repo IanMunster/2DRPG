@@ -62,9 +62,16 @@ public class Stat : MonoBehaviour {
 
 	///<summary> Initialize the Stat Values (current, max) </summary>
 	public void Initialize (float currentValue, float maxValue) {
+		// Check for Fill Content
+		if (content == null) {
+			// Get Component if no Content found
+			content = GetComponent<Image> ();
+		}
 		// Set the Max & Current Values of this Stat
 		MyMaxValue = maxValue;
 		MyCurrentValue = currentValue;
+		// Fill the Fill Amount to Current Value
+		content.fillAmount = MyCurrentValue / MyMaxValue;
 	}
 
 

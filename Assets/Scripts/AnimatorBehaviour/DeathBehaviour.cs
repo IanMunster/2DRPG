@@ -23,8 +23,8 @@ public class DeathBehaviour : StateMachineBehaviour {
 		// Update Time Passed
 		timePassed += Time.deltaTime;
 		if (timePassed >= 5) {
-			// Remove the Gameobject
-			Destroy(animator.gameObject);
+			// Remove the Gameobject through NPC's Character Removed Function
+			animator.GetComponent<NPC> ().OnCharacterRemoved ();
 		}
 	}
 
