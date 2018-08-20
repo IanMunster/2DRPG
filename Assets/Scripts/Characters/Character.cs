@@ -91,8 +91,8 @@ public abstract class Character : MonoBehaviour {
 	}
 
 
-	/// <summary> Function to Stop Attacking </summary>
-	public void StopAttack () {
+	/// <summary> Function to Stop Attacking  virtual to override in inheriting class</summary>
+	public virtual void StopAttack () {
 		// Set character to not Attacking
 		isAttacking = false;
 		// Set the Animators Paramaters of Attack to false

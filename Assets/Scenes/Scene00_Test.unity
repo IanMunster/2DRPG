@@ -312,8 +312,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 10.43, y: 0}
-  m_SizeDelta: {x: 172.14, y: 20}
+  m_AnchoredPosition: {x: 9.5, y: 0}
+  m_SizeDelta: {x: 172, y: 16.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &53418409
 MonoBehaviour:
@@ -334,12 +334,12 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 10911, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: 9f51dff55ce52994591a0eed0c025c03, type: 3}
+  m_Type: 3
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 0
-  m_FillAmount: 0.796
+  m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
 --- !u!222 &53418410
@@ -758,10 +758,6 @@ MonoBehaviour:
   health: {fileID: 188853060}
   healthValue: 50
   mana: {fileID: 1358771242}
-  spellPrefabs:
-  - {fileID: 1569096404611992, guid: a7ce9c039fdab2049ae16a5aa473e28c, type: 2}
-  - {fileID: 1569096404611992, guid: 02e8e73cf70673947b0a1eb3f7789fb6, type: 2}
-  - {fileID: 1569096404611992, guid: 4bc69943445be2d4797f53625ed784a6, type: 2}
   gemPoints:
   - {fileID: 2029479148}
   - {fileID: 1829781283}
@@ -883,6 +879,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 34ee1551fb2b2b24fa0655ba47ed677a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  fadeSpeed: 0
+  castingBar: {fileID: 53418409}
+  spellName: {fileID: 1373071993}
+  icon: {fileID: 305172680}
+  castTime: {fileID: 1424125087}
   spells:
   - name: FireBolt
     damage: 5
@@ -891,7 +892,7 @@ MonoBehaviour:
     castTime: 1
     spellPrefab: {fileID: 1569096404611992, guid: a7ce9c039fdab2049ae16a5aa473e28c,
       type: 2}
-    castbarColor: {r: 1, g: 0, b: 0, a: 0}
+    castbarColor: {r: 1, g: 0, b: 0, a: 1}
   - name: FrostBolt
     damage: 10
     icon: {fileID: 21300012, guid: 71bc54206ae253c4eb2a7b8be7bff4b9, type: 3}
@@ -899,7 +900,7 @@ MonoBehaviour:
     castTime: 2
     spellPrefab: {fileID: 1569096404611992, guid: 02e8e73cf70673947b0a1eb3f7789fb6,
       type: 2}
-    castbarColor: {r: 0.40000004, g: 1, b: 1, a: 0}
+    castbarColor: {r: 0.40000004, g: 1, b: 1, a: 1}
   - name: ShockBolt
     damage: 15
     icon: {fileID: 21300010, guid: 71bc54206ae253c4eb2a7b8be7bff4b9, type: 3}
@@ -907,7 +908,7 @@ MonoBehaviour:
     castTime: 3
     spellPrefab: {fileID: 1569096404611992, guid: 4bc69943445be2d4797f53625ed784a6,
       type: 2}
-    castbarColor: {r: 1, g: 1, b: 0, a: 0}
+    castbarColor: {r: 1, g: 1, b: 0, a: 1}
 --- !u!1 &252518607
 GameObject:
   m_ObjectHideFlags: 0
@@ -1976,7 +1977,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.5955882, g: 0.5955882, b: 0.5955882, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -2376,7 +2377,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_EffectColor: {r: 0, g: 0, b: 0, a: 1}
-  m_EffectDistance: {x: 1, y: 1}
+  m_EffectDistance: {x: 1.5, y: 1.5}
   m_UseGraphicAlpha: 1
 --- !u!114 &1373071993
 MonoBehaviour:
@@ -2465,7 +2466,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_EffectColor: {r: 0, g: 0, b: 0, a: 1}
-  m_EffectDistance: {x: 1, y: 1}
+  m_EffectDistance: {x: 1.5, y: 1.5}
   m_UseGraphicAlpha: 1
 --- !u!114 &1424125087
 MonoBehaviour:

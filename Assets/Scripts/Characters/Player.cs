@@ -160,4 +160,13 @@ public class Player : Character {
 		// Activate correct block behind player, based on Gem ExitPoint Position aka Attack Direction
 		sightBlocks [gemIndex].Activate ();
 	}
+
+
+	// Override of StopAttack function inherited from Character
+	public override void StopAttack () {
+		// Stop spellbook from Casting
+		spellBook.StopCasting ();
+		// Call Base StopAttack from Character
+		base.StopAttack ();
+	}
 }
