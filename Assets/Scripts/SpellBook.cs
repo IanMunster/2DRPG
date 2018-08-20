@@ -20,6 +20,10 @@ public class SpellBook : MonoBehaviour {
 	[SerializeField] private Image icon;
 	// Ui to show Spell Cast time
 	[SerializeField] private Text castTime;
+	// CanvasGroup Component on CastBar to Fade Castbar
+	[SerializeField] private CanvasGroup canvasGroup;
+	// Fade Routine of CastBar
+	private Coroutine fadeRoutine;
 
 	// Progress Routine of Spell
 	private Coroutine spellRoutine;
@@ -28,14 +32,10 @@ public class SpellBook : MonoBehaviour {
 
 
 	// Use this for initialization
-	void Start () {
-		
-	}
+	void Start () {}
 	
 	// Update is called once per frame
-	void Update () {
-		
-	}
+	void Update () {}
 
 	// Function to Return a Spell (from Array on Index)
 	public Spell CastSpell (int index) {
@@ -49,6 +49,8 @@ public class SpellBook : MonoBehaviour {
 		icon.sprite = spells[index].MyIcon;
 		// Start the Progress Routine to show Progress on UI
 		spellRoutine = StartCoroutine (Progress (index));
+		// Start the Fade Routine to show CastBar
+		fadeRoutine = StartCoroutine ( FadeCastBar ()); 
 		// Return the spell on the Index
 		return spells[index];
 	}
@@ -62,9 +64,8 @@ public class SpellBook : MonoBehaviour {
 		float value = 0.0f;
 		// While progress of Fade is below 1 (100 procent)
 		while (value <= 1.0f) {
-
-			//!! CONTINUE TOMMOROW
-
+			// Fade Alpha In and Out with speed of Rate
+			canvasGroup.alpha = Mathf.Lerp (0, 1, rate);
 			// Increase Fade value with rate and time past
 			value += rate * Time.deltaTime;
 			// return nothing
@@ -105,6 +106,16 @@ public class SpellBook : MonoBehaviour {
 
 	// Function to Stop Casting
 	public void StopCasting () {
+		// If Fade Routine is Running
+		if (fadeRoutine != null) {
+			// Stop the Fade In Routine
+			StopCoroutine (fadeRoutine);
+			// Fade CastBar
+			canvasGroup.alpha = 0;
+			// Reset the FadeIn Routine
+			fadeRoutine = null;
+		}
+
 		// There currently is a SpellCast-Progress running
 		if (spellRoutine != null) {
 			// Stop the progress routine
