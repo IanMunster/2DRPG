@@ -10,3 +10,6 @@ Water0:		# 0026FFFF
 ## Objects
 Tree0:		# 7F3300FF
 Bush0:		# C14D00FF
+
+Player:		# FF006EFF
+Enemy:		# FF00DCFF

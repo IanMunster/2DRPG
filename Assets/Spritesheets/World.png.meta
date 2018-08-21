@@ -240,12 +240,12 @@ TextureImporter:
       name: Tree
       rect:
         serializedVersion: 2
-        x: 570
-        y: 1008
-        width: 192
-        height: 160
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 565
+        y: 990
+        width: 200
+        height: 200
+      alignment: 6
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -366,12 +366,12 @@ TextureImporter:
       name: Bush
       rect:
         serializedVersion: 2
-        x: 821
-        y: 1050
-        width: 81
-        height: 76
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 787
+        y: 1049
+        width: 151
+        height: 151
+      alignment: 6
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []

@@ -34,6 +34,10 @@ public class LevelDirector : MonoBehaviour {
 
 	// Function to Generate the Map
 	private void GenerateMap () {
+		// Set height of Map
+		int height = mapData[0].height;
+		int width = mapData [0].width;
+
 		// Go through all Map Data
 		for (int i = 0; i < mapData.Length; i++) {
 			//  Go through all pixels on X width
@@ -51,9 +55,14 @@ public class LevelDirector : MonoBehaviour {
 						// Set Tiles Y Position (startpos + bounds of OtherTile)
 						float yPos = WorldStartPos.y + (defaultTile.bounds.size.y * y);
 						// Create Tile GameObject as Child of Map
-						GameObject go = Instantiate (newElement.MyElementPrefab, map);
+						GameObject go = Instantiate (newElement.MyElementPrefab, map.GetChild(i));
 						// Set Tile to correct Position
 						go.transform.position = new Vector2 (xPos, yPos);
+						//Check for Tag Tree or Bush
+						if (newElement.MyTileTag == "Tree0" || newElement.MyTileTag == "Bush0") {
+							// Get the SpriteRenderer and Set Sorting Order, based on Y
+							go.GetComponent<SpriteRenderer>().sortingOrder = height * 2 - y * 2;
+						}
 					}
 				}
 			}
