@@ -5,7 +5,7 @@ using UnityEngine;
 
 /// <summary>
 /// Level director.
-/// 
+/// Generate a Map based on PixelData. Creates Tiles from Sprite, gives Position, Sort Tree Renderer LayerOrder & Creates Edged Water
 /// </summary>
 
 public class LevelDirector : MonoBehaviour {
@@ -21,6 +21,8 @@ public class LevelDirector : MonoBehaviour {
 
 	// World StartPos based on Camera (Start of Map Generation Pos)
 	private Vector3 WorldStartPos { get { return Camera.main.ScreenToWorldPoint (new Vector3(0,0)); } }
+	// Dictionary for checking Neighboring WaterTiles <Position, Tile>
+	private Dictionary<Point, GameObject> waterTiles = new Dictionary<Point, GameObject>();
 
 
 	// Use this for initialization
@@ -28,11 +30,8 @@ public class LevelDirector : MonoBehaviour {
 		// Generate the Map
 		GenerateMap ();
 	}
-	// Update is called once per frame
-//	void Update () {}
 
-
-	// Function to Generate the Map
+	/// <summary> Function to Generate the Map; Create Tile on Pos, Sort Tree LayerOrder & Create WaterTile Dictionary</summary>
 	private void GenerateMap () {
 		// Set height of Map
 		int height = mapData[0].height;
@@ -55,17 +54,57 @@ public class LevelDirector : MonoBehaviour {
 						// Set Tiles Y Position (startpos + bounds of OtherTile)
 						float yPos = WorldStartPos.y + (defaultTile.bounds.size.y * y);
 						// Create Tile GameObject as Child of Map
-						GameObject go = Instantiate (newElement.MyElementPrefab, map.GetChild(i));
+						GameObject newTile = Instantiate (newElement.MyElementPrefab, map.GetChild(i));
 						// Set Tile to correct Position
-						go.transform.position = new Vector2 (xPos, yPos);
-						//Check for Tag Tree or Bush
-						if (newElement.MyTileTag == "Tree0" || newElement.MyTileTag == "Bush0") {
+						newTile.transform.position = new Vector2 (xPos, yPos);
+						// Check for Tag Water on Tile
+						if (newElement.MyTileTag == "Water") {
+							// Add WaterTile Position and GameObject to WaterTiles Dictionary
+							waterTiles.Add (new Point (x, y), newTile);
+						}
+						//Check for Tag Tree or Bush on Tile
+						if (newElement.MyTileTag == "Tree" || newElement.MyTileTag == "Bush") {
 							// Get the SpriteRenderer and Set Sorting Order, based on Y
-							go.GetComponent<SpriteRenderer>().sortingOrder = height * 2 - y * 2;
+							newTile.GetComponent<SpriteRenderer>().sortingOrder = height * 2 - y * 2;
 						}
 					}
 				}
 			}
 		}
+		// Check all WaterTiles after Creation of Map
+		CheckWater ();
+	}
+
+	public void CheckWater () {
+		// Check for Tiles of <position and gameobject>
+		foreach (KeyValuePair <Point,GameObject> tile in waterTiles) {
+			// Compose the Neighbor-String on Tile Position
+			string composition = TileCheck (tile.Key);
+		}
+	}
+
+
+	/// <summary> Function to Check Through the WaterTiles Dictionary & .. (Current WaterTile Position) </summary>
+	public string TileCheck (Point currentPoint) {
+		// Composition of Water ("W" water, "E" earth)
+		string composition = string.Empty;
+		// Go through all X values of Tile
+		for (int x = -1; x <= 1; x++) {
+			// Go through all Y values of Tile
+			for (int y = -1; y <= 1; y++) {
+				// Dont check Own position.
+				if (x != 0 || y != 0) {
+					// check for waterTiles in Dictionary
+					if (waterTiles.ContainsKey (new Point (currentPoint.MyX + x, currentPoint.MyY + y))) {
+						// Add W for Water to Composition
+						composition += "W";
+					} else {
+						// Otherwise add E for Earth to Composition
+						composition += "E";
+					}
+				}
+			}
+		}
+		return composition;
 	}
 }
