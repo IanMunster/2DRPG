@@ -32,6 +32,8 @@ public class LayerSorter : MonoBehaviour {
 		if (collision.tag == "Obstacle") {
 			// Get the Obstacle Script for the SortingOrder
 			Obstacle o = collision.GetComponent<Obstacle> ();
+			// Obstacle Fade Out
+			o.FadeOut ();
 			// Check if no Other Obstacles Hit & SortingOrder of Obstacle is Less than Character
 			if (obstacles.Count == 0 || o.MySpriteRenderer.sortingOrder-1 < parentRenderer.sortingOrder) {
 				// Change sorting order Parent (according to obstacles Sorting Order)
@@ -49,6 +51,8 @@ public class LayerSorter : MonoBehaviour {
 		if (collision.tag == "Obstacle") {
 			// Get the Obstacle Script for the SortingOrder
 			Obstacle o = collision.GetComponent<Obstacle> ();
+			// Obstacle Fade IN
+			o.FadeIn ();
 			// Remove Obstacle from Colliding Obstacles
 			obstacles.Remove(o);
 			// If No More Colliding Obstacles left
