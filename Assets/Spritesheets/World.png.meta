@@ -1,148 +1,420 @@
 fileFormatVersion: 2
 guid: fccfa502e29f48e4ca56cf9d62c530de
-timeCreated: 1534612576
-licenseType: Free
 TextureImporter:
-  fileIDToRecycleName:
-    21300000: World_0
-    21300002: Tree
-    21300004: World_2
-    21300006: World_3
-    21300008: World_4
-    21300010: World_5
-    21300012: World_6
-    21300014: World_7
-    21300016: World_8
-    21300018: World_9
-    21300020: Bush
-    21300022: World_11
-    21300024: World_12
-    21300026: World_13
-    21300028: Sand0
-    21300030: Grass0
-    21300032: Water0
-    21300034: Dirt0
-    21300036: Dirt1
-    21300038: Sand2
-    21300040: Grass2
-    21300042: Grass3
-    21300044: Water2
-    21300046: Wood0
-    21300048: Stone0
-    21300050: GrassStone0
-    21300052: GrassStone1
-    21300054: GrassStone3
-    21300056: WoodWater0
-    21300058: WoodWater1
-    21300060: WaterGrass0
-    21300062: WaterGrass1
-    21300064: GrassWater2
-    21300066: World_33
-    21300068: World_34
-    21300070: World_35
-    21300072: World_36
-    21300074: World_37
-    21300076: World_38
-    21300078: World_39
-    21300080: World_40
-    21300082: World_41
-    21300084: World_42
-    21300086: World_43
-    21300088: World_44
-    21300090: World_45
-    21300092: World_46
-    21300094: World_47
-    21300096: World_48
-    21300098: World_49
-    21300100: World_50
-    21300102: World_51
-    21300104: World_52
-    21300106: World_53
-    21300108: World_54
-    21300110: World_55
-    21300112: World_56
-    21300114: World_57
-    21300116: World_58
-    21300118: World_59
-    21300120: World_60
-    21300122: World_61
-    21300124: World_62
-    21300126: World_63
-    21300128: World_64
-    21300130: World_65
-    21300132: World_66
-    21300134: World_67
-    21300136: World_68
-    21300138: World_69
-    21300140: World_70
-    21300142: World_71
-    21300144: World_72
-    21300146: World_73
-    21300148: World_74
-    21300150: World_75
-    21300152: World_76
-    21300154: World_77
-    21300156: World_78
-    21300158: World_79
-    21300160: World_80
-    21300162: World_81
-    21300164: World_82
-    21300166: World_83
-    21300168: World_84
-    21300170: World_85
-    21300172: World_86
-    21300174: World_87
-    21300176: World_88
-    21300178: World_89
-    21300180: World_90
-    21300182: World_91
-    21300184: World_92
-    21300186: World_93
-    21300188: World_94
-    21300190: World_95
-    21300192: World_96
-    21300194: World_97
-    21300196: World_98
-    21300198: World_99
-    21300200: World_100
-    21300202: World_101
-    21300204: World_102
-    21300206: World_103
-    21300208: World_104
-    21300210: World_105
-    21300212: World_106
-    21300214: World_107
-    21300216: World_108
-    21300218: World_109
-    21300220: World_110
-    21300222: World_111
-    21300224: World_112
-    21300226: World_113
-    21300228: World_114
-    21300230: World_115
-    21300232: World_116
-    21300234: World_117
-    21300236: World_118
-    21300238: World_119
-    21300240: World_120
-    21300242: World_121
-    21300244: World_122
-    21300246: World_123
-    21300248: World_124
-    21300250: World_125
-    21300252: World_126
-    21300254: World_127
-    21300256: World_128
-    21300258: World_129
-    21300260: World_130
-    21300262: World_131
-    21300264: World_132
-    21300266: World_133
-    21300268: World_134
-    21300270: World_135
-    21300272: World_136
+  internalIDToNameTable:
+  - first:
+      213: 21300000
+    second: World_0
+  - first:
+      213: 21300002
+    second: Tree
+  - first:
+      213: 21300004
+    second: World_2
+  - first:
+      213: 21300006
+    second: World_3
+  - first:
+      213: 21300008
+    second: World_4
+  - first:
+      213: 21300010
+    second: World_5
+  - first:
+      213: 21300012
+    second: World_6
+  - first:
+      213: 21300014
+    second: World_7
+  - first:
+      213: 21300016
+    second: World_8
+  - first:
+      213: 21300018
+    second: World_9
+  - first:
+      213: 21300020
+    second: Bush
+  - first:
+      213: 21300022
+    second: World_11
+  - first:
+      213: 21300024
+    second: World_12
+  - first:
+      213: 21300026
+    second: World_13
+  - first:
+      213: 21300028
+    second: Sand0
+  - first:
+      213: 21300030
+    second: Grass0
+  - first:
+      213: 21300032
+    second: Water0
+  - first:
+      213: 21300034
+    second: Dirt0
+  - first:
+      213: 21300036
+    second: Dirt1
+  - first:
+      213: 21300038
+    second: Sand2
+  - first:
+      213: 21300040
+    second: Grass2
+  - first:
+      213: 21300042
+    second: Grass3
+  - first:
+      213: 21300044
+    second: Water2
+  - first:
+      213: 21300046
+    second: Wood0
+  - first:
+      213: 21300048
+    second: Stone0
+  - first:
+      213: 21300050
+    second: GrassStone0
+  - first:
+      213: 21300052
+    second: GrassStone1
+  - first:
+      213: 21300054
+    second: GrassStone3
+  - first:
+      213: 21300056
+    second: WoodWater0
+  - first:
+      213: 21300058
+    second: WoodWater1
+  - first:
+      213: 21300060
+    second: WaterGrass0
+  - first:
+      213: 21300062
+    second: WaterGrass1
+  - first:
+      213: 21300064
+    second: GrassWater2
+  - first:
+      213: 21300066
+    second: World_33
+  - first:
+      213: 21300068
+    second: World_34
+  - first:
+      213: 21300070
+    second: World_35
+  - first:
+      213: 21300072
+    second: World_36
+  - first:
+      213: 21300074
+    second: World_37
+  - first:
+      213: 21300076
+    second: World_38
+  - first:
+      213: 21300078
+    second: World_39
+  - first:
+      213: 21300080
+    second: World_40
+  - first:
+      213: 21300082
+    second: World_41
+  - first:
+      213: 21300084
+    second: World_42
+  - first:
+      213: 21300086
+    second: World_43
+  - first:
+      213: 21300088
+    second: World_44
+  - first:
+      213: 21300090
+    second: World_45
+  - first:
+      213: 21300092
+    second: World_46
+  - first:
+      213: 21300094
+    second: World_47
+  - first:
+      213: 21300096
+    second: World_48
+  - first:
+      213: 21300098
+    second: World_49
+  - first:
+      213: 21300100
+    second: World_50
+  - first:
+      213: 21300102
+    second: World_51
+  - first:
+      213: 21300104
+    second: World_52
+  - first:
+      213: 21300106
+    second: World_53
+  - first:
+      213: 21300108
+    second: World_54
+  - first:
+      213: 21300110
+    second: World_55
+  - first:
+      213: 21300112
+    second: World_56
+  - first:
+      213: 21300114
+    second: World_57
+  - first:
+      213: 21300116
+    second: World_58
+  - first:
+      213: 21300118
+    second: World_59
+  - first:
+      213: 21300120
+    second: World_60
+  - first:
+      213: 21300122
+    second: World_61
+  - first:
+      213: 21300124
+    second: World_62
+  - first:
+      213: 21300126
+    second: World_63
+  - first:
+      213: 21300128
+    second: World_64
+  - first:
+      213: 21300130
+    second: World_65
+  - first:
+      213: 21300132
+    second: World_66
+  - first:
+      213: 21300134
+    second: World_67
+  - first:
+      213: 21300136
+    second: World_68
+  - first:
+      213: 21300138
+    second: World_69
+  - first:
+      213: 21300140
+    second: World_70
+  - first:
+      213: 21300142
+    second: World_71
+  - first:
+      213: 21300144
+    second: World_72
+  - first:
+      213: 21300146
+    second: World_73
+  - first:
+      213: 21300148
+    second: World_74
+  - first:
+      213: 21300150
+    second: World_75
+  - first:
+      213: 21300152
+    second: World_76
+  - first:
+      213: 21300154
+    second: World_77
+  - first:
+      213: 21300156
+    second: World_78
+  - first:
+      213: 21300158
+    second: World_79
+  - first:
+      213: 21300160
+    second: World_80
+  - first:
+      213: 21300162
+    second: World_81
+  - first:
+      213: 21300164
+    second: World_82
+  - first:
+      213: 21300166
+    second: World_83
+  - first:
+      213: 21300168
+    second: World_84
+  - first:
+      213: 21300170
+    second: World_85
+  - first:
+      213: 21300172
+    second: World_86
+  - first:
+      213: 21300174
+    second: World_87
+  - first:
+      213: 21300176
+    second: World_88
+  - first:
+      213: 21300178
+    second: World_89
+  - first:
+      213: 21300180
+    second: World_90
+  - first:
+      213: 21300182
+    second: World_91
+  - first:
+      213: 21300184
+    second: World_92
+  - first:
+      213: 21300186
+    second: World_93
+  - first:
+      213: 21300188
+    second: World_94
+  - first:
+      213: 21300190
+    second: World_95
+  - first:
+      213: 21300192
+    second: World_96
+  - first:
+      213: 21300194
+    second: World_97
+  - first:
+      213: 21300196
+    second: World_98
+  - first:
+      213: 21300198
+    second: World_99
+  - first:
+      213: 21300200
+    second: World_100
+  - first:
+      213: 21300202
+    second: World_101
+  - first:
+      213: 21300204
+    second: World_102
+  - first:
+      213: 21300206
+    second: World_103
+  - first:
+      213: 21300208
+    second: World_104
+  - first:
+      213: 21300210
+    second: World_105
+  - first:
+      213: 21300212
+    second: World_106
+  - first:
+      213: 21300214
+    second: World_107
+  - first:
+      213: 21300216
+    second: World_108
+  - first:
+      213: 21300218
+    second: World_109
+  - first:
+      213: 21300220
+    second: World_110
+  - first:
+      213: 21300222
+    second: World_111
+  - first:
+      213: 21300224
+    second: World_112
+  - first:
+      213: 21300226
+    second: World_113
+  - first:
+      213: 21300228
+    second: World_114
+  - first:
+      213: 21300230
+    second: World_115
+  - first:
+      213: 21300232
+    second: World_116
+  - first:
+      213: 21300234
+    second: World_117
+  - first:
+      213: 21300236
+    second: World_118
+  - first:
+      213: 21300238
+    second: World_119
+  - first:
+      213: 21300240
+    second: World_120
+  - first:
+      213: 21300242
+    second: World_121
+  - first:
+      213: 21300244
+    second: World_122
+  - first:
+      213: 21300246
+    second: World_123
+  - first:
+      213: 21300248
+    second: World_124
+  - first:
+      213: 21300250
+    second: World_125
+  - first:
+      213: 21300252
+    second: World_126
+  - first:
+      213: 21300254
+    second: World_127
+  - first:
+      213: 21300256
+    second: World_128
+  - first:
+      213: 21300258
+    second: World_129
+  - first:
+      213: 21300260
+    second: World_130
+  - first:
+      213: 21300262
+    second: World_131
+  - first:
+      213: 21300264
+    second: World_132
+  - first:
+      213: 21300266
+    second: World_133
+  - first:
+      213: 21300268
+    second: World_134
+  - first:
+      213: 21300270
+    second: World_135
+  - first:
+      213: 21300272
+    second: World_136
   externalObjects: {}
-  serializedVersion: 4
+  serializedVersion: 10
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -160,6 +432,8 @@ TextureImporter:
     heightScale: 0.25
     normalMapFilter: 0
   isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -170,7 +444,7 @@ TextureImporter:
     serializedVersion: 2
     filterMode: -1
     aniso: -1
-    mipBias: -1
+    mipBias: -100
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -182,18 +456,21 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
   alphaIsTransparency: 1
   spriteTessellationDetail: -1
   textureType: 8
   textureShape: 1
+  singleChannelComponent: 0
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
   platformSettings:
-  - buildTarget: DefaultTexturePlatform
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -203,7 +480,9 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
-  - buildTarget: Standalone
+    forceMaximumCompressionQuality_BC6H_BC7: 1
+  - serializedVersion: 3
+    buildTarget: Standalone
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -213,7 +492,9 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
-  - buildTarget: Android
+    forceMaximumCompressionQuality_BC6H_BC7: 1
+  - serializedVersion: 3
+    buildTarget: Android
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -223,7 +504,9 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
-  - buildTarget: WebGL
+    forceMaximumCompressionQuality_BC6H_BC7: 1
+  - serializedVersion: 3
+    buildTarget: WebGL
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -233,6 +516,7 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -269,6 +553,13 @@ TextureImporter:
         - {x: 94.56299, y: 26.47583}
         - {x: 90.81482, y: 56.314453}
       tessellationDetail: 0
+      bones: []
+      spriteID: 22305410000000000800000000000000
+      internalID: 21300002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: World_2
       rect:
@@ -289,6 +580,13 @@ TextureImporter:
         - {x: 79.5, y: -87.20225}
         - {x: 79.5, y: 97.5}
       tessellationDetail: 0
+      bones: []
+      spriteID: 42305410000000000800000000000000
+      internalID: 21300004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: World_3
       rect:
@@ -311,6 +609,13 @@ TextureImporter:
         - {x: 78.5, y: -23.825243}
         - {x: 78.5, y: 153.5}
       tessellationDetail: 0
+      bones: []
+      spriteID: 62305410000000000800000000000000
+      internalID: 21300006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: World_4
       rect:
@@ -334,6 +639,13 @@ TextureImporter:
         - {x: 79, y: 88.42183}
         - {x: 77.63565, y: 89.5}
       tessellationDetail: 0
+      bones: []
+      spriteID: 82305410000000000800000000000000
+      internalID: 21300008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: World_5
       rect:
@@ -369,6 +681,13 @@ TextureImporter:
         - {x: 15.24995, y: 37.19425}
         - {x: -11.774953, y: 37.19425}
       tessellationDetail: 0
+      bones: []
+      spriteID: a2305410000000000800000000000000
+      internalID: 21300010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: World_6
       rect:
@@ -389,6 +708,13 @@ TextureImporter:
         - {x: 79, y: -83.87468}
         - {x: 79, y: 75.50003}
       tessellationDetail: 0
+      bones: []
+      spriteID: c2305410000000000800000000000000
+      internalID: 21300012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: World_7
       rect:
@@ -409,6 +735,13 @@ TextureImporter:
         - {x: 78, y: -16.798803}
         - {x: 78, y: 34}
       tessellationDetail: 0
+      bones: []
+      spriteID: e2305410000000000800000000000000
+      internalID: 21300014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: World_8
       rect:
@@ -437,6 +770,13 @@ TextureImporter:
         - {x: 33.139397, y: -4.03099}
         - {x: 13.226312, y: -4.03099}
       tessellationDetail: 0
+      bones: []
+      spriteID: 03305410000000000800000000000000
+      internalID: 21300016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: World_9
       rect:
@@ -462,6 +802,13 @@ TextureImporter:
         - {x: -5.7307334, y: -4.03099}
         - {x: -27.066183, y: -4.03099}
       tessellationDetail: 0
+      bones: []
+      spriteID: 23305410000000000800000000000000
+      internalID: 21300018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Bush
       rect:
@@ -480,6 +827,13 @@ TextureImporter:
         - {x: 35.446655, y: -17.331055}
         - {x: 21.616821, y: -0.8060303}
       tessellationDetail: 0
+      bones: []
+      spriteID: 43305410000000000800000000000000
+      internalID: 21300020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: World_11
       rect:
@@ -502,6 +856,13 @@ TextureImporter:
         - {x: 56, y: 58.059822}
         - {x: 36.35152, y: 67.5}
       tessellationDetail: 0
+      bones: []
+      spriteID: 63305410000000000800000000000000
+      internalID: 21300022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: World_12
       rect:
@@ -524,6 +885,13 @@ TextureImporter:
         - {x: 56.5, y: 52.36787}
         - {x: 44.599564, y: 67.5}
       tessellationDetail: 0
+      bones: []
+      spriteID: 83305410000000000800000000000000
+      internalID: 21300024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: World_13
       rect:
@@ -547,6 +915,13 @@ TextureImporter:
         - {x: 32.5, y: 22.448286}
         - {x: 25.93139, y: 40.5}
       tessellationDetail: 0
+      bones: []
+      spriteID: a3305410000000000800000000000000
+      internalID: 21300026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Sand0
       rect:
@@ -565,6 +940,13 @@ TextureImporter:
         - {x: 75.5, y: -74.89076}
         - {x: 75.5, y: 75.5}
       tessellationDetail: 0
+      bones: []
+      spriteID: c3305410000000000800000000000000
+      internalID: 21300028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Grass0
       rect:
@@ -583,6 +965,13 @@ TextureImporter:
         - {x: 75.5, y: -74.89076}
         - {x: 75.5, y: 75.5}
       tessellationDetail: 0
+      bones: []
+      spriteID: e3305410000000000800000000000000
+      internalID: 21300030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Water0
       rect:
@@ -601,6 +990,13 @@ TextureImporter:
         - {x: 75.5, y: -74.89076}
         - {x: 75.5, y: 75.5}
       tessellationDetail: 0
+      bones: []
+      spriteID: 04305410000000000800000000000000
+      internalID: 21300032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Dirt0
       rect:
@@ -619,6 +1015,13 @@ TextureImporter:
         - {x: 75.5, y: -74.89076}
         - {x: 75.5, y: 75.5}
       tessellationDetail: 0
+      bones: []
+      spriteID: 24305410000000000800000000000000
+      internalID: 21300034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Dirt1
       rect:
@@ -637,6 +1040,13 @@ TextureImporter:
         - {x: 75.5, y: -74.89076}
         - {x: 75.5, y: 75.5}
       tessellationDetail: 0
+      bones: []
+      spriteID: 44305410000000000800000000000000
+      internalID: 21300036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Sand2
       rect:
@@ -655,6 +1065,13 @@ TextureImporter:
         - {x: 75.5, y: -74.89076}
         - {x: 75.5, y: 75.5}
       tessellationDetail: 0
+      bones: []
+      spriteID: 64305410000000000800000000000000
+      internalID: 21300038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Grass2
       rect:
@@ -673,6 +1090,13 @@ TextureImporter:
         - {x: 75, y: -74.89076}
         - {x: 75, y: 75.5}
       tessellationDetail: 0
+      bones: []
+      spriteID: 84305410000000000800000000000000
+      internalID: 21300040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Grass3
       rect:
@@ -691,6 +1115,13 @@ TextureImporter:
         - {x: 75.5, y: -74.89076}
         - {x: 75.5, y: 75.5}
       tessellationDetail: 0
+      bones: []
+      spriteID: a4305410000000000800000000000000
+      internalID: 21300042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Water2
       rect:
@@ -709,6 +1140,13 @@ TextureImporter:
         - {x: 75.5, y: -74.89076}
         - {x: 75.5, y: 75.5}
       tessellationDetail: 0
+      bones: []
+      spriteID: c4305410000000000800000000000000
+      internalID: 21300044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Wood0
       rect:
@@ -727,6 +1165,13 @@ TextureImporter:
         - {x: 75.5, y: -75.60226}
         - {x: 75.5, y: 76}
       tessellationDetail: 0
+      bones: []
+      spriteID: e4305410000000000800000000000000
+      internalID: 21300046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Stone0
       rect:
@@ -745,6 +1190,13 @@ TextureImporter:
         - {x: 75.5, y: -74.89076}
         - {x: 75.5, y: 75.5}
       tessellationDetail: 0
+      bones: []
+      spriteID: 05305410000000000800000000000000
+      internalID: 21300048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: GrassStone0
       rect:
@@ -763,6 +1215,13 @@ TextureImporter:
         - {x: 75.5, y: -74.89076}
         - {x: 75.5, y: 75.5}
       tessellationDetail: 0
+      bones: []
+      spriteID: 25305410000000000800000000000000
+      internalID: 21300050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: GrassStone1
       rect:
@@ -781,6 +1240,13 @@ TextureImporter:
         - {x: 75.5, y: -74.89076}
         - {x: 75.5, y: 75.5}
       tessellationDetail: 0
+      bones: []
+      spriteID: 45305410000000000800000000000000
+      internalID: 21300052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: GrassStone3
       rect:
@@ -799,6 +1265,13 @@ TextureImporter:
         - {x: 75.5, y: -74.89076}
         - {x: 75.5, y: 75.5}
       tessellationDetail: 0
+      bones: []
+      spriteID: 65305410000000000800000000000000
+      internalID: 21300054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: WoodWater0
       rect:
@@ -817,6 +1290,13 @@ TextureImporter:
         - {x: 75.5, y: -74.89076}
         - {x: 75.5, y: 75.5}
       tessellationDetail: 0
+      bones: []
+      spriteID: 85305410000000000800000000000000
+      internalID: 21300056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: WoodWater1
       rect:
@@ -835,6 +1315,13 @@ TextureImporter:
         - {x: 75.5, y: -75.5}
         - {x: 75.5, y: 75.5}
       tessellationDetail: 0
+      bones: []
+      spriteID: a5305410000000000800000000000000
+      internalID: 21300058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: WaterGrass0
       rect:
@@ -853,6 +1340,13 @@ TextureImporter:
         - {x: 75.5, y: -75.5}
         - {x: 75.5, y: 75.5}
       tessellationDetail: 0
+      bones: []
+      spriteID: c5305410000000000800000000000000
+      internalID: 21300060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: WaterGrass1
       rect:
@@ -871,6 +1365,13 @@ TextureImporter:
         - {x: 75.5, y: -75.5}
         - {x: 75.5, y: 75.5}
       tessellationDetail: 0
+      bones: []
+      spriteID: e5305410000000000800000000000000
+      internalID: 21300062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: GrassWater2
       rect:
@@ -889,6 +1390,13 @@ TextureImporter:
         - {x: 75.5, y: -75.5}
         - {x: 75.5, y: 75.5}
       tessellationDetail: 0
+      bones: []
+      spriteID: 06305410000000000800000000000000
+      internalID: 21300064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: World_33
       rect:
@@ -909,6 +1417,13 @@ TextureImporter:
         - {x: 50.035606, y: -70.22987}
         - {x: 50.035606, y: 70.5}
       tessellationDetail: 0
+      bones: []
+      spriteID: 26305410000000000800000000000000
+      internalID: 21300066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: World_34
       rect:
@@ -929,6 +1444,13 @@ TextureImporter:
         - {x: 49.5, y: 57.83909}
         - {x: 49.5, y: 70.5}
       tessellationDetail: 0
+      bones: []
+      spriteID: 46305410000000000800000000000000
+      internalID: 21300068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: World_35
       rect:
@@ -952,6 +1474,13 @@ TextureImporter:
         - {x: 50.5, y: 0.919549}
         - {x: 50.5, y: 62.10805}
       tessellationDetail: 0
+      bones: []
+      spriteID: 66305410000000000800000000000000
+      internalID: 21300070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: World_36
       rect:
@@ -973,6 +1502,13 @@ TextureImporter:
         - {x: 17.88528, y: 70.5}
         - {x: -50.388157, y: 50.724144}
       tessellationDetail: 0
+      bones: []
+      spriteID: 86305410000000000800000000000000
+      internalID: 21300072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: World_37
       rect:
@@ -993,6 +1529,13 @@ TextureImporter:
         - {x: 0.39726162, y: 70.5}
         - {x: -49.385452, y: 60.685062}
       tessellationDetail: 0
+      bones: []
+      spriteID: a6305410000000000800000000000000
+      internalID: 21300074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: World_38
       rect:
@@ -1018,6 +1561,13 @@ TextureImporter:
         - {x: 17.5, y: -16.867807}
         - {x: 17.5, y: 50.01265}
       tessellationDetail: 0
+      bones: []
+      spriteID: c6305410000000000800000000000000
+      internalID: 21300076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: World_39
       rect:
@@ -1038,6 +1588,13 @@ TextureImporter:
         - {x: 17.5, y: -70.22987}
         - {x: 17.5, y: 70.5}
       tessellationDetail: 0
+      bones: []
+      spriteID: e6305410000000000800000000000000
+      internalID: 21300078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: World_40
       rect:
@@ -1060,6 +1617,13 @@ TextureImporter:
         - {x: 19, y: -14.129874}
         - {x: 19, y: 22.5}
       tessellationDetail: 0
+      bones: []
+      spriteID: 07305410000000000800000000000000
+      internalID: 21300080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: World_41
       rect:
@@ -1083,6 +1647,13 @@ TextureImporter:
         - {x: 20, y: 6.906931}
         - {x: 8.339542, y: 25.40578}
       tessellationDetail: 0
+      bones: []
+      spriteID: 27305410000000000800000000000000
+      internalID: 21300082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: World_42
       rect:
@@ -1102,6 +1673,13 @@ TextureImporter:
         - {x: 16.5, y: -23.5}
         - {x: 16.5, y: 23.002317}
       tessellationDetail: 0
+      bones: []
+      spriteID: 47305410000000000800000000000000
+      internalID: 21300084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: World_43
       rect:
@@ -1124,6 +1702,13 @@ TextureImporter:
         - {x: 24.5, y: 5.408077}
         - {x: 22.528797, y: 16}
       tessellationDetail: 0
+      bones: []
+      spriteID: 67305410000000000800000000000000
+      internalID: 21300086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: World_44
       rect:
@@ -1146,6 +1731,13 @@ TextureImporter:
         - {x: 15.5, y: 5.5621095}
         - {x: 7.1402917, y: 15.5}
       tessellationDetail: 0
+      bones: []
+      spriteID: 87305410000000000800000000000000
+      internalID: 21300088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: World_45
       rect:
@@ -1168,6 +1760,13 @@ TextureImporter:
         - {x: 15.5, y: 6.985098}
         - {x: 8.978668, y: 15.5}
       tessellationDetail: 0
+      bones: []
+      spriteID: a7305410000000000800000000000000
+      internalID: 21300090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: World_46
       rect:
@@ -1190,6 +1789,13 @@ TextureImporter:
         - {x: 12, y: 0.46670094}
         - {x: 3.7519345, y: 12}
       tessellationDetail: 0
+      bones: []
+      spriteID: c7305410000000000800000000000000
+      internalID: 21300092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: World_47
       rect:
@@ -1212,6 +1818,13 @@ TextureImporter:
         - {x: 11, y: -2.379276}
         - {x: 11, y: 6.1586547}
       tessellationDetail: 0
+      bones: []
+      spriteID: e7305410000000000800000000000000
+      internalID: 21300094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: World_48
       rect:
@@ -1234,6 +1847,13 @@ TextureImporter:
         - {x: 11, y: -2.379276}
         - {x: 11, y: 6.1586547}
       tessellationDetail: 0
+      bones: []
+      spriteID: 08305410000000000800000000000000
+      internalID: 21300096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: World_49
       rect:
@@ -1256,6 +1876,13 @@ TextureImporter:
         - {x: 11, y: 4.7356663}
         - {x: 7.8695307, y: 11.850609}
       tessellationDetail: 0
+      bones: []
+      spriteID: 28305410000000000800000000000000
+      internalID: 21300098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: World_50
       rect:
@@ -1279,6 +1906,13 @@ TextureImporter:
         - {x: 10.5, y: 7.5942802}
         - {x: 6.6049953, y: 37}
       tessellationDetail: 0
+      bones: []
+      spriteID: 48305410000000000800000000000000
+      internalID: 21300100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: World_51
       rect:
@@ -1303,6 +1937,13 @@ TextureImporter:
         - {x: 11.5, y: 10.440257}
         - {x: 4.39679, y: 37}
       tessellationDetail: 0
+      bones: []
+      spriteID: 68305410000000000800000000000000
+      internalID: 21300102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: World_52
       rect:
@@ -1327,6 +1968,13 @@ TextureImporter:
         - {x: 8.778301, y: -26.308002}
         - {x: 10.2006645, y: -24.885014}
       tessellationDetail: 0
+      bones: []
+      spriteID: 88305410000000000800000000000000
+      internalID: 21300104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: World_53
       rect:
@@ -1347,6 +1995,13 @@ TextureImporter:
         - {x: 14, y: 37.72648}
         - {x: 5.7253942, y: 46}
       tessellationDetail: 0
+      bones: []
+      spriteID: a8305410000000000800000000000000
+      internalID: 21300106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: World_54
       rect:
@@ -1369,6 +2024,13 @@ TextureImporter:
         - {x: 46, y: -18.845955}
         - {x: 40.65386, y: -3.193082}
       tessellationDetail: 0
+      bones: []
+      spriteID: c8305410000000000800000000000000
+      internalID: 21300108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: World_55
       rect:
@@ -1391,6 +2053,13 @@ TextureImporter:
         - {x: 10.5, y: 3.154042}
         - {x: 5.324139, y: 8}
       tessellationDetail: 0
+      bones: []
+      spriteID: e8305410000000000800000000000000
+      internalID: 21300110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: World_56
       rect:
@@ -1413,6 +2082,13 @@ TextureImporter:
         - {x: 20, y: 4.652896}
         - {x: 11.184269, y: 25}
       tessellationDetail: 0
+      bones: []
+      spriteID: 09305410000000000800000000000000
+      internalID: 21300112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: World_57
       rect:
@@ -1434,6 +2110,13 @@ TextureImporter:
         - {x: 17.5, y: 9.826471}
         - {x: 16.777359, y: 11.5}
       tessellationDetail: 0
+      bones: []
+      spriteID: 29305410000000000800000000000000
+      internalID: 21300114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: World_58
       rect:
@@ -1456,6 +2139,13 @@ TextureImporter:
         - {x: 25.5, y: -19.826431}
         - {x: 25.5, y: 14.325292}
       tessellationDetail: 0
+      bones: []
+      spriteID: 49305410000000000800000000000000
+      internalID: 21300116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: World_59
       rect:
@@ -1478,6 +2168,13 @@ TextureImporter:
         - {x: 15.5, y: 6.114968}
         - {x: 7.1402917, y: 15}
       tessellationDetail: 0
+      bones: []
+      spriteID: 69305410000000000800000000000000
+      internalID: 21300118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: World_60
       rect:
@@ -1500,6 +2197,13 @@ TextureImporter:
         - {x: 12, y: 0.5770468}
         - {x: 3.88858, y: 12}
       tessellationDetail: 0
+      bones: []
+      spriteID: 89305410000000000800000000000000
+      internalID: 21300120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: World_61
       rect:
@@ -1522,6 +2226,13 @@ TextureImporter:
         - {x: -0.51515526, y: 11.5}
         - {x: -11.894062, y: 1.6356463}
       tessellationDetail: 0
+      bones: []
+      spriteID: a9305410000000000800000000000000
+      internalID: 21300122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: World_62
       rect:
@@ -1544,6 +2255,13 @@ TextureImporter:
         - {x: 11, y: 1.6356463}
         - {x: 4.612089, y: 11.5}
       tessellationDetail: 0
+      bones: []
+      spriteID: c9305410000000000800000000000000
+      internalID: 21300124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: World_63
       rect:
@@ -1566,6 +2284,13 @@ TextureImporter:
         - {x: 14, y: 1.6356463}
         - {x: 6.1648474, y: 14}
       tessellationDetail: 0
+      bones: []
+      spriteID: e9305410000000000800000000000000
+      internalID: 21300126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: World_64
       rect:
@@ -1588,6 +2313,13 @@ TextureImporter:
         - {x: 13, y: 4.481623}
         - {x: 3.158473, y: 14}
       tessellationDetail: 0
+      bones: []
+      spriteID: 0a305410000000000800000000000000
+      internalID: 21300128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: World_65
       rect:
@@ -1610,6 +2342,13 @@ TextureImporter:
         - {x: 14, y: 2.6333625}
         - {x: 7.3078427, y: 14.5}
       tessellationDetail: 0
+      bones: []
+      spriteID: 2a305410000000000800000000000000
+      internalID: 21300130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: World_66
       rect:
@@ -1632,6 +2371,13 @@ TextureImporter:
         - {x: 14, y: -17.099962}
         - {x: 14, y: 24}
       tessellationDetail: 0
+      bones: []
+      spriteID: 4a305410000000000800000000000000
+      internalID: 21300132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: World_67
       rect:
@@ -1655,6 +2401,13 @@ TextureImporter:
         - {x: 20, y: 9.936818}
         - {x: 12.606632, y: 25.5}
       tessellationDetail: 0
+      bones: []
+      spriteID: 6a305410000000000800000000000000
+      internalID: 21300134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: World_68
       rect:
@@ -1677,6 +2430,13 @@ TextureImporter:
         - {x: 14, y: 1.3988869}
         - {x: 7.4201803, y: 14}
       tessellationDetail: 0
+      bones: []
+      spriteID: 8a305410000000000800000000000000
+      internalID: 21300136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: World_69
       rect:
@@ -1700,6 +2460,13 @@ TextureImporter:
         - {x: 40.5, y: 7.802335}
         - {x: 40.5, y: 12.0713005}
       tessellationDetail: 0
+      bones: []
+      spriteID: aa305410000000000800000000000000
+      internalID: 21300138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: World_70
       rect:
@@ -1722,6 +2489,13 @@ TextureImporter:
         - {x: 15.5, y: 14.205783}
         - {x: 14.252108, y: 15.5}
       tessellationDetail: 0
+      bones: []
+      spriteID: ca305410000000000800000000000000
+      internalID: 21300140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: World_71
       rect:
@@ -1744,6 +2518,13 @@ TextureImporter:
         - {x: 12, y: 2.1103811}
         - {x: 2.4662168, y: 12}
       tessellationDetail: 0
+      bones: []
+      spriteID: ea305410000000000800000000000000
+      internalID: 21300142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: World_72
       rect:
@@ -1766,6 +2547,13 @@ TextureImporter:
         - {x: 14, y: 2.8218753}
         - {x: 7.3078427, y: 14}
       tessellationDetail: 0
+      bones: []
+      spriteID: 0b305410000000000800000000000000
+      internalID: 21300144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: World_73
       rect:
@@ -1792,6 +2580,13 @@ TextureImporter:
         - {x: 12.483877, y: -39}
         - {x: 39.50878, y: -39}
       tessellationDetail: 0
+      bones: []
+      spriteID: 2b305410000000000800000000000000
+      internalID: 21300146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: World_74
       rect:
@@ -1812,6 +2607,13 @@ TextureImporter:
         - {x: 42, y: -11.145976}
         - {x: 36.64452, y: 41}
       tessellationDetail: 0
+      bones: []
+      spriteID: 4b305410000000000800000000000000
+      internalID: 21300148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: World_75
       rect:
@@ -1832,6 +2634,13 @@ TextureImporter:
         - {x: 15, y: -47.317234}
         - {x: 15, y: 47.5}
       tessellationDetail: 0
+      bones: []
+      spriteID: 6b305410000000000800000000000000
+      internalID: 21300150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: World_76
       rect:
@@ -1855,6 +2664,13 @@ TextureImporter:
         - {x: 38.5, y: 24.582767}
         - {x: 18.589518, y: 38}
       tessellationDetail: 0
+      bones: []
+      spriteID: 8b305410000000000800000000000000
+      internalID: 21300152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: World_77
       rect:
@@ -1881,6 +2697,13 @@ TextureImporter:
         - {x: 38.5, y: 14.75634}
         - {x: 32.42162, y: 27.563236}
       tessellationDetail: 0
+      bones: []
+      spriteID: ab305410000000000800000000000000
+      internalID: 21300154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: World_78
       rect:
@@ -1901,6 +2724,13 @@ TextureImporter:
         - {x: 21, y: 12.491969}
         - {x: 18.73797, y: 14.5}
       tessellationDetail: 0
+      bones: []
+      spriteID: cb305410000000000800000000000000
+      internalID: 21300156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: World_79
       rect:
@@ -1925,6 +2755,13 @@ TextureImporter:
         - {x: 25, y: 8.546008}
         - {x: 13.621094, y: 27}
       tessellationDetail: 0
+      bones: []
+      spriteID: eb305410000000000800000000000000
+      internalID: 21300158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: World_80
       rect:
@@ -1947,6 +2784,13 @@ TextureImporter:
         - {x: 38, y: -0.41493696}
         - {x: 10.186036, y: 26}
       tessellationDetail: 0
+      bones: []
+      spriteID: 0c305410000000000800000000000000
+      internalID: 21300160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: World_81
       rect:
@@ -1970,6 +2814,13 @@ TextureImporter:
         - {x: 33.5, y: -13.933328}
         - {x: 33.5, y: -2.5494196}
       tessellationDetail: 0
+      bones: []
+      spriteID: 2c305410000000000800000000000000
+      internalID: 21300162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: World_82
       rect:
@@ -1995,6 +2846,13 @@ TextureImporter:
         - {x: 46.5, y: 20.179312}
         - {x: 34.592014, y: 35}
       tessellationDetail: 0
+      bones: []
+      spriteID: 4c305410000000000800000000000000
+      internalID: 21300164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: World_83
       rect:
@@ -2017,6 +2875,13 @@ TextureImporter:
         - {x: -24.265862, y: 23.5}
         - {x: -25.5, y: 20.795399}
       tessellationDetail: 0
+      bones: []
+      spriteID: 6c305410000000000800000000000000
+      internalID: 21300166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: World_84
       rect:
@@ -2038,6 +2903,13 @@ TextureImporter:
         - {x: 16.746367, y: 7.4310412}
         - {x: 5.3674593, y: 20.237938}
       tessellationDetail: 0
+      bones: []
+      spriteID: 8c305410000000000800000000000000
+      internalID: 21300168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: World_85
       rect:
@@ -2058,6 +2930,13 @@ TextureImporter:
         - {x: 33.5, y: -24.779316}
         - {x: 33.5, y: 33.5}
       tessellationDetail: 0
+      bones: []
+      spriteID: ac305410000000000800000000000000
+      internalID: 21300170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: World_86
       rect:
@@ -2080,6 +2959,13 @@ TextureImporter:
         - {x: 31, y: -19.048277}
         - {x: 31, y: 16.526434}
       tessellationDetail: 0
+      bones: []
+      spriteID: cc305410000000000800000000000000
+      internalID: 21300172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: World_87
       rect:
@@ -2104,6 +2990,13 @@ TextureImporter:
         - {x: 28, y: 11.103461}
         - {x: 17.313522, y: 25.333345}
       tessellationDetail: 0
+      bones: []
+      spriteID: ec305410000000000800000000000000
+      internalID: 21300174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: World_88
       rect:
@@ -2122,6 +3015,13 @@ TextureImporter:
         - {x: 14, y: -9.4907875}
         - {x: 14, y: 9.5}
       tessellationDetail: 0
+      bones: []
+      spriteID: 0d305410000000000800000000000000
+      internalID: 21300176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: World_89
       rect:
@@ -2145,6 +3045,13 @@ TextureImporter:
         - {x: 43, y: -30.326422}
         - {x: 43, y: 20.901163}
       tessellationDetail: 0
+      bones: []
+      spriteID: 2d305410000000000800000000000000
+      internalID: 21300178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: World_90
       rect:
@@ -2167,6 +3074,13 @@ TextureImporter:
         - {x: 42, y: -16.962063}
         - {x: 32.37743, y: 41}
       tessellationDetail: 0
+      bones: []
+      spriteID: 4d305410000000000800000000000000
+      internalID: 21300180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: World_91
       rect:
@@ -2190,6 +3104,13 @@ TextureImporter:
         - {x: 15, y: -7.3091874}
         - {x: 15, y: 41.07242}
       tessellationDetail: 0
+      bones: []
+      spriteID: 6d305410000000000800000000000000
+      internalID: 21300182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: World_92
       rect:
@@ -2211,6 +3132,13 @@ TextureImporter:
         - {x: 40.5, y: -32.614937}
         - {x: 40.5, y: 41}
       tessellationDetail: 0
+      bones: []
+      spriteID: 8d305410000000000800000000000000
+      internalID: 21300184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: World_93
       rect:
@@ -2234,6 +3162,13 @@ TextureImporter:
         - {x: 40.5, y: 18.612648}
         - {x: 30.710512, y: 41}
       tessellationDetail: 0
+      bones: []
+      spriteID: ad305410000000000800000000000000
+      internalID: 21300186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: World_94
       rect:
@@ -2256,6 +3191,13 @@ TextureImporter:
         - {x: 21, y: 11.233349}
         - {x: 21, y: 14.5}
       tessellationDetail: 0
+      bones: []
+      spriteID: cd305410000000000800000000000000
+      internalID: 21300188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: World_95
       rect:
@@ -2280,6 +3222,13 @@ TextureImporter:
         - {x: 25, y: 15.402304}
         - {x: 15.043457, y: 26}
       tessellationDetail: 0
+      bones: []
+      spriteID: ed305410000000000800000000000000
+      internalID: 21300190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: World_96
       rect:
@@ -2304,6 +3253,13 @@ TextureImporter:
         - {x: 38, y: 3.595404}
         - {x: 13.030763, y: 25}
       tessellationDetail: 0
+      bones: []
+      spriteID: 0e305410000000000800000000000000
+      internalID: 21300192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: World_97
       rect:
@@ -2327,6 +3283,13 @@ TextureImporter:
         - {x: 33.5, y: -12.345971}
         - {x: 33.5, y: 4.729891}
       tessellationDetail: 0
+      bones: []
+      spriteID: 2e305410000000000800000000000000
+      internalID: 21300194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: World_98
       rect:
@@ -2349,6 +3312,13 @@ TextureImporter:
         - {x: 46.5, y: 23.189657}
         - {x: 27.4802, y: 35.5}
       tessellationDetail: 0
+      bones: []
+      spriteID: 4e305410000000000800000000000000
+      internalID: 21300196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: World_99
       rect:
@@ -2373,6 +3343,13 @@ TextureImporter:
         - {x: 25.5, y: -5.6540213}
         - {x: 2.759041, y: 24}
       tessellationDetail: 0
+      bones: []
+      spriteID: 6e305410000000000800000000000000
+      internalID: 21300198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: World_100
       rect:
@@ -2393,6 +3370,13 @@ TextureImporter:
         - {x: 22.5, y: -1.2310231}
         - {x: 22.5, y: 8.729896}
       tessellationDetail: 0
+      bones: []
+      spriteID: 8e305410000000000800000000000000
+      internalID: 21300200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: World_101
       rect:
@@ -2414,6 +3398,13 @@ TextureImporter:
         - {x: 33, y: -23.191936}
         - {x: 33, y: 33}
       tessellationDetail: 0
+      bones: []
+      spriteID: ae305410000000000800000000000000
+      internalID: 21300202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: World_102
       rect:
@@ -2436,6 +3427,13 @@ TextureImporter:
         - {x: 31, y: 24}
         - {x: 30.06227, y: 24}
       tessellationDetail: 0
+      bones: []
+      spriteID: ce305410000000000800000000000000
+      internalID: 21300204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: World_103
       rect:
@@ -2461,6 +3459,13 @@ TextureImporter:
         - {x: 28, y: -3.2505567}
         - {x: 28, y: 5.287374}
       tessellationDetail: 0
+      bones: []
+      spriteID: ee305410000000000800000000000000
+      internalID: 21300206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: World_104
       rect:
@@ -2482,6 +3487,13 @@ TextureImporter:
         - {x: 14, y: -5.7689486}
         - {x: 14, y: 10}
       tessellationDetail: 0
+      bones: []
+      spriteID: 0f305410000000000800000000000000
+      internalID: 21300208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: World_105
       rect:
@@ -2501,6 +3513,13 @@ TextureImporter:
         - {x: 43, y: -38.988495}
         - {x: 43, y: 39}
       tessellationDetail: 0
+      bones: []
+      spriteID: 2f305410000000000800000000000000
+      internalID: 21300210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: World_106
       rect:
@@ -2521,6 +3540,13 @@ TextureImporter:
         - {x: 42, y: -12.817231}
         - {x: 36.64452, y: 41.5}
       tessellationDetail: 0
+      bones: []
+      spriteID: 4f305410000000000800000000000000
+      internalID: 21300212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: World_107
       rect:
@@ -2541,6 +3567,13 @@ TextureImporter:
         - {x: 15, y: -46.699993}
         - {x: 15, y: 47}
       tessellationDetail: 0
+      bones: []
+      spriteID: 6f305410000000000800000000000000
+      internalID: 21300214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: World_108
       rect:
@@ -2563,6 +3596,13 @@ TextureImporter:
         - {x: 40.5, y: 20.200005}
         - {x: 33.36911, y: 41}
       tessellationDetail: 0
+      bones: []
+      spriteID: 8f305410000000000800000000000000
+      internalID: 21300216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: World_109
       rect:
@@ -2585,6 +3625,13 @@ TextureImporter:
         - {x: 40.5, y: 21.622993}
         - {x: 30.710512, y: 41}
       tessellationDetail: 0
+      bones: []
+      spriteID: af305410000000000800000000000000
+      internalID: 21300218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: World_110
       rect:
@@ -2608,6 +3655,13 @@ TextureImporter:
         - {x: 21, y: 4.5712767}
         - {x: 20.160334, y: 14}
       tessellationDetail: 0
+      bones: []
+      spriteID: cf305410000000000800000000000000
+      internalID: 21300220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: World_111
       rect:
@@ -2631,6 +3685,13 @@ TextureImporter:
         - {x: 25, y: 1.75978}
         - {x: 10.776367, y: 27}
       tessellationDetail: 0
+      bones: []
+      spriteID: ef305410000000000800000000000000
+      internalID: 21300222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: World_112
       rect:
@@ -2653,6 +3714,13 @@ TextureImporter:
         - {x: 38, y: 7.0287414}
         - {x: 10.186036, y: 25.5}
       tessellationDetail: 0
+      bones: []
+      spriteID: 00405410000000000800000000000000
+      internalID: 21300224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: World_113
       rect:
@@ -2676,6 +3744,13 @@ TextureImporter:
         - {x: 33.5, y: 11.297707}
         - {x: 32.04884, y: 25.5}
       tessellationDetail: 0
+      bones: []
+      spriteID: 20405410000000000800000000000000
+      internalID: 21300226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: World_114
       rect:
@@ -2698,6 +3773,13 @@ TextureImporter:
         - {x: 46.5, y: 15.527589}
         - {x: 21.790747, y: 35.5}
       tessellationDetail: 0
+      bones: []
+      spriteID: 40405410000000000800000000000000
+      internalID: 21300228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: World_115
       rect:
@@ -2721,6 +3803,13 @@ TextureImporter:
         - {x: 25.5, y: -0.22068089}
         - {x: 7.0261307, y: 23}
       tessellationDetail: 0
+      bones: []
+      spriteID: 60405410000000000800000000000000
+      internalID: 21300230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: World_116
       rect:
@@ -2740,6 +3829,13 @@ TextureImporter:
         - {x: 22.5, y: 7.894257}
         - {x: 8.789761, y: 22}
       tessellationDetail: 0
+      bones: []
+      spriteID: 80405410000000000800000000000000
+      internalID: 21300232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: World_117
       rect:
@@ -2761,6 +3857,13 @@ TextureImporter:
         - {x: 33, y: -21.604591}
         - {x: 33, y: 33}
       tessellationDetail: 0
+      bones: []
+      spriteID: a0405410000000000800000000000000
+      internalID: 21300234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: World_118
       rect:
@@ -2781,6 +3884,13 @@ TextureImporter:
         - {x: 31, y: 20.412651}
         - {x: 25.79518, y: 24}
       tessellationDetail: 0
+      bones: []
+      spriteID: c0405410000000000800000000000000
+      internalID: 21300236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: World_119
       rect:
@@ -2803,6 +3913,13 @@ TextureImporter:
         - {x: 28, y: -10.912636}
         - {x: 28, y: 14.701156}
       tessellationDetail: 0
+      bones: []
+      spriteID: e0405410000000000800000000000000
+      internalID: 21300238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: World_120
       rect:
@@ -2825,6 +3942,13 @@ TextureImporter:
         - {x: 14, y: 6.913803}
         - {x: 14, y: 10}
       tessellationDetail: 0
+      bones: []
+      spriteID: 01405410000000000800000000000000
+      internalID: 21300240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: World_121
       rect:
@@ -2846,6 +3970,13 @@ TextureImporter:
         - {x: 43, y: 19.51839}
         - {x: 38.08642, y: 38.5}
       tessellationDetail: 0
+      bones: []
+      spriteID: 21405410000000000800000000000000
+      internalID: 21300242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: World_122
       rect:
@@ -2866,6 +3997,13 @@ TextureImporter:
         - {x: -25.939465, y: 41}
         - {x: -41.58546, y: -15.210344}
       tessellationDetail: 0
+      bones: []
+      spriteID: 41405410000000000800000000000000
+      internalID: 21300244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: World_123
       rect:
@@ -2886,6 +4024,13 @@ TextureImporter:
         - {x: -10.915579, y: 46.5}
         - {x: -15, y: 36.9977}
       tessellationDetail: 0
+      bones: []
+      spriteID: 61405410000000000800000000000000
+      internalID: 21300246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: World_124
       rect:
@@ -2910,6 +4055,13 @@ TextureImporter:
         - {x: 40.5, y: 20.364367}
         - {x: 40.480927, y: 28.902298}
       tessellationDetail: 0
+      bones: []
+      spriteID: 81405410000000000800000000000000
+      internalID: 21300248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: World_125
       rect:
@@ -2932,6 +4084,13 @@ TextureImporter:
         - {x: 40.5, y: 28.902298}
         - {x: 20.753967, y: 41}
       tessellationDetail: 0
+      bones: []
+      spriteID: a1405410000000000800000000000000
+      internalID: 21300250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: World_126
       rect:
@@ -2955,6 +4114,13 @@ TextureImporter:
         - {x: 22, y: 11.562075}
         - {x: 18.026789, y: 14}
       tessellationDetail: 0
+      bones: []
+      spriteID: c1405410000000000800000000000000
+      internalID: 21300252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: World_127
       rect:
@@ -2977,6 +4143,13 @@ TextureImporter:
         - {x: 26.5, y: 14.019539}
         - {x: 23, y: 26.826435}
       tessellationDetail: 0
+      bones: []
+      spriteID: e1405410000000000800000000000000
+      internalID: 21300254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: World_128
       rect:
@@ -3002,6 +4175,13 @@ TextureImporter:
         - {x: 38, y: -15.286204}
         - {x: 38, y: 7.4816113}
       tessellationDetail: 0
+      bones: []
+      spriteID: 02405410000000000800000000000000
+      internalID: 21300256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: World_129
       rect:
@@ -3026,6 +4206,13 @@ TextureImporter:
         - {x: 33.5, y: 3.2126458}
         - {x: 26.359385, y: 25.5}
       tessellationDetail: 0
+      bones: []
+      spriteID: 22405410000000000800000000000000
+      internalID: 21300258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: World_130
       rect:
@@ -3049,6 +4236,13 @@ TextureImporter:
         - {x: 46.5, y: 15.268964}
         - {x: 31.74729, y: 34.5}
       tessellationDetail: 0
+      bones: []
+      spriteID: 42405410000000000800000000000000
+      internalID: 21300260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: World_131
       rect:
@@ -3073,6 +4267,13 @@ TextureImporter:
         - {x: 25.5, y: -1.0563197}
         - {x: 1.3366777, y: 24}
       tessellationDetail: 0
+      bones: []
+      spriteID: 62405410000000000800000000000000
+      internalID: 21300262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: World_132
       rect:
@@ -3093,6 +4294,13 @@ TextureImporter:
         - {x: 20.168667, y: 15.173562}
         - {x: 1.6779442, y: 21.5}
       tessellationDetail: 0
+      bones: []
+      spriteID: 82405410000000000800000000000000
+      internalID: 21300264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: World_133
       rect:
@@ -3114,6 +4322,13 @@ TextureImporter:
         - {x: 33, y: 31.210344}
         - {x: 31.00976, y: 33}
       tessellationDetail: 0
+      bones: []
+      spriteID: a2405410000000000800000000000000
+      internalID: 21300266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: World_134
       rect:
@@ -3135,6 +4350,13 @@ TextureImporter:
         - {x: 30.5, y: 22.422989}
         - {x: 27.928724, y: 24.5}
       tessellationDetail: 0
+      bones: []
+      spriteID: c2405410000000000800000000000000
+      internalID: 21300268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: World_135
       rect:
@@ -3156,6 +4378,13 @@ TextureImporter:
         - {x: 28, y: -4.767815}
         - {x: 28, y: 3.7701154}
       tessellationDetail: 0
+      bones: []
+      spriteID: e2405410000000000800000000000000
+      internalID: 21300270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: World_136
       rect:
@@ -3178,9 +4407,26 @@ TextureImporter:
         - {x: 11.514337, y: 9}
         - {x: -9.821113, y: 9}
       tessellationDetail: 0
+      bones: []
+      spriteID: 03405410000000000800000000000000
+      internalID: 21300272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
   spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 
