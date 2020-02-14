@@ -1,0 +1,38 @@
+ART:
+
+!Shadow included in Sprites
+
+Humans 
+- Idle: U, D, L, R
+- Walk: U, D, L, R
+- Death: U, D, L, R
+- Attack: U, D, L, R
+- Defend: U, D, L, R
+- Action0 (Wave)
+
+(player)
+idle, walk, death, attack (sword / spell), defend (shield / spell?), action (wave, pickup etc?)
+
+Spells
+- Cast (omni-directional)
+- Move (omni-directional)
+- Hit (omni-directional)
+- Effect (omni-directional)
+
+
+World:
+- Better Trees (2x TileHeight)
+- 2nd Type of Tree
+- 2nd Type of Water (with lilypad)
+- PathTiles (sand/dirt)
+
+UI
+X White Health/Mana/XP bar
+
+X White Circle for ActionTimer
+X White Circle for Portrait BG
+
+- Action Icon with BG
+- ActionIconFrame (overlay with Transparent-Window)
+
+- NEW skill Icons for Swordmen & Rogue
